@@ -1,7 +1,63 @@
 *{
-  /* background-color: red; */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: IBM Plex Sans;
+}
+#nav{
+  margin-right: 8%;
+}
+#nav a{
+  color: white;
+}
+#logo{
+  width: 100%;
+  height: 100%;
+  margin-left: 80%;
+}
+#nav-div{
+  background-color: rgba(8,70,226,1);
+}
+#header-component h1{
+}
+#payment-cap h1{
+  font-size: 100px;
+  font-weight: bold;
+}
+#phone-pic img{
+  width: 90%;
+  margin-left: 10%;
+}
+#payment-cap{
+}
+nav{
+  background-color: rgba(8,70,226,1);
+}
+#header{
+  height: auto;
+  background-color: rgba(8,70,226,1);
+}
+#sub-header{
+}
+/* Sec Two */
+#sec-2{
+  height: 100vh;
+}
+#about-us{
+  margin-top: 80px;;
+  font-size: 40px;
+  width: 68%;
+  text-align: center;
+  margin-left: 16%;
+  color: black;
+}
+#features-row{
+  width: 100%;
+}
+#features-row h4{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(8,70,226,1);
+}
+#feaure-row-div{
+  width: 100%;
 }
