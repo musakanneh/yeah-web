@@ -96,3 +96,12 @@ span{
   margin-left: 40%;
   width: auto;
 }
+
+
+/* ----------------------------------
+* Adverting Section Styling
+------------------------------------*/
+#advert-sec{
+  /* border: 1px solid red; */
+  height: 100 auto;
+}
