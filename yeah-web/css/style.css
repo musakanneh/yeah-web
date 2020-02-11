@@ -103,3 +103,33 @@ span{
 #advert-sec{
   height: 100 auto;
 }
+
+/* ---------------------------------------
+* Footer Styling
+ ----------------------------------------*/
+ #footer-cover{
+   height: auto;
+ }
+ #footer{
+   background-color:rgba(8,70,226,1);
+ }
+ #future-of-payment{
+		text-align: left;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 70px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+ }
+ #trade-mark p{
+   font-size: 12px;
+   letter-spacing: 0.1px;
+   color: white;
+   text-align: center;
+ }
+ hr{
+   margin-top: 40px;
+   background-color: white;
+   opacity: 0.503;
+   color: white;
+ }
