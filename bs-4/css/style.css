@@ -39,13 +39,14 @@ nav{
 #sub-header{
 }
 
-/* Sec Two
+/* ------------------------------------
+* About Us Sec Styling
 -------------------------------------*/
 #sec-2{
-  height: 100vh;
+  height: auto;
 }
 #about-us{
-  margin-top: 80px;;
+  margin-top: 80px;
   font-size: 40px;
   width: 68%;
   text-align: center;
@@ -59,6 +60,7 @@ nav{
 #features-row h4{
   font-size: 20px;
   font-weight: bold;
+  margin-top: 10px;
   margin-bottom: 22px;
   color: rgba(8,70,226,1);
 }
@@ -67,4 +69,30 @@ nav{
 }
 span{
   font-size: 35px;
+}
+
+/* --------------------------------
+* Bar code Sec Styling
+--------------------------------*/
+#bar-code-sec{
+  height: 100 auto;
+  background-color: #000000;
+}
+#scan-to-pay h1{
+	text-align: center;
+	font-weight: bold;
+	font-size: 115px;
+	color: rgba(255,255,255,1);
+	letter-spacing: 0.1px;
+}
+#scan-to-pay p{
+		text-align: center;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+}
+#bar-code-img{
+  align-items: center;
+  margin-left: 40%;
+  width: auto;
 }
