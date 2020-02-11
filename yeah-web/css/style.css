@@ -8,6 +8,7 @@
 }
 #nav a{
   color: white;
+  font-size: 14px;
 }
 #logo{
   width: 100%;
@@ -17,15 +18,14 @@
 #nav-div{
   background-color: rgba(8,70,226,1);
 }
-#header-component h1{
-}
 #payment-cap h1{
-  font-size: 100px;
+  padding-top: 45px;
+  font-size: 105px;
   font-weight: bold;
 }
 #phone-pic img{
   width: 90%;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 #payment-cap{
 }
@@ -35,8 +35,6 @@ nav{
 #header{
   height: auto;
   background-color: rgba(8,70,226,1);
-}
-#sub-header{
 }
 
 /* ------------------------------------
@@ -109,23 +107,30 @@ span{
  ----------------------------------------*/
  #footer-cover{
    height: auto;
+   /* border: 1px solid red; */
  }
  #footer{
    background-color:rgba(8,70,226,1);
  }
  #future-of-payment{
-		text-align: left;
-		font-style: normal;
-		font-weight: lighter;
-		font-size: 70px;
-		color: rgba(255,255,255,1);
-		letter-spacing: 0.1px;
+  margin-top: -10%;
+  text-align: left;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 65px;
+  color: rgba(255,255,255,1);
+  letter-spacing: 0.1px;
  }
  #trade-mark p{
    font-size: 12px;
    letter-spacing: 0.1px;
    color: white;
    text-align: center;
+ }
+ #waitlist h4{
+   color: rgba(255,255,255,1);
+   font-size: 20px;
+   margin-top: -10%;
  }
  hr{
    margin-top: 40px;
