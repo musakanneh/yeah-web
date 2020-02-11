@@ -38,7 +38,9 @@ nav{
 }
 #sub-header{
 }
-/* Sec Two */
+
+/* Sec Two
+-------------------------------------*/
 #sec-2{
   height: 100vh;
 }
@@ -52,12 +54,17 @@ nav{
 }
 #features-row{
   width: 100%;
+  margin-left: 1%;
 }
 #features-row h4{
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 22px;
   color: rgba(8,70,226,1);
 }
 #feaure-row-div{
   width: 100%;
+}
+span{
+  font-size: 35px;
 }
