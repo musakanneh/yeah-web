@@ -17,6 +17,7 @@ input{
   color: rgba(8,70,226,1);
   background-color: white;
   padding: 10px;
+  text-decoration: none;
   margin-left: 8px;
 }
 #nav{
@@ -123,7 +124,6 @@ span{
  ----------------------------------------*/
  #footer-cover{
    height: auto;
-   /* border: 1px solid red; */
  }
  #footer{
    background-color:rgba(8,70,226,1);
@@ -143,10 +143,15 @@ span{
    color: white;
    text-align: center;
  }
+ #waitlist-div{
+   align-content: flex-end;
+ }
  #waitlist h4{
    color: rgba(255,255,255,1);
    font-size: 20px;
    margin-top: -10%;
+   font-weight: bold;
+   letter-spacing: 0.1px;
  }
  hr{
    margin-top: 40px;

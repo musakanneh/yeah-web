@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <title>Yeah Payment</title>
   </head>
   <body>
@@ -30,11 +31,13 @@
   </nav>
 <!-- </div> -->
 
+<!-- <section ></section> -->
+
 <section id="header">
   <div class="container" id="sub-header">
     <div class="row" id="header-component">
-      <div class="col-md-8 text-white" id="payment-cap">
-        <h1 class="mt-5">Payment <br> made samplier</h1>
+      <div class="col-md-8 text-white"  id="payment-cap">
+        <h1 class="mt-5 wow fadeInUp" data-wow-delay=".5s" data-wow-duration="2s">Payment <br> made samplier</h1>
         <h5 class="mt-5">All you need is a phone number.</h5>
         <div class="mt-5">
           <input type="text" name="" value="+254" style="width:5%;">
@@ -43,7 +46,7 @@
         </div>
       </div>
       <div class="col-md-4" id="phone-pic">
-        <img src="img/img1.png" class="img-fluid" alt="Responsive image">
+        <img class="wow fadeInRight" data-wow-delay=".5s" data-wow-duration="2s" src="img/img1.png" class="img-fluid" alt="Responsive image">
       </div>
     </div>
   </div>
@@ -53,7 +56,8 @@
 <section class="container" id="sec-2">
   <div class="" id="sec-logo">
   <img class="mt-1" src="img/white-logo.png" alt="">
-  <h2 id="about-us">Yeah provides simple and modern payment services to anyone
+  <h2 class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="2s" id="about-us">
+    Yeah provides simple and modern payment services to anyone
     with a phone number. With our app, you can spend, send money,
     pay bills, and receive money with just your phone number.</h2>
   </div>
@@ -81,7 +85,6 @@
     </div>
   </div>
 </section>
-<br><br>
 
 <section class="container-fluid mt-5" id="bar-code-sec">
   <div class="container">
@@ -104,7 +107,7 @@
         </div>
         <div class="col-md-auto">
         </div>
-        <div class="col col-lg-4">
+        <div class="col col-lg-4 mt-5">
           <div class="">
             <span>Simple money <br> transfer</span>
           </div>
@@ -131,7 +134,7 @@
       <div class="col">
       <h1 id="future-of-payment">Join the future <br> of payments.</h1>
       </div>
-      <div class="col">
+      <div class="col" id="waitlist-div">
         <div class="mt-4" id="waitlist">
           <h4>Add me to the early access waitlist</h4>
         </div>
@@ -139,8 +142,8 @@
       <div class="col-md-5 mt-3">
         <input type="text" name="" value="What's your full name">
       </div>
-      <div class="col-md-3 mt-3">
-        <a>Join waitlist 👍🏾 </a>
+      <div class="col-md-6 mt-3">
+        <a id="w-list" href="#">Join waitlist 👍🏾 </a>
       </div>
       </div>
       </div>
@@ -160,7 +163,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+  </script>
   </body>
-
-
 </html>
