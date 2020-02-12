@@ -86,9 +86,10 @@ span{
   font-size: 35px;
 }
 
-/* Carousel Styling */
+/* ----------------------------
+* Carousel Styling
+------------------------------*/
 #carouselExampleIndicators{
-  /* border: 1px solid red; */
   width: 70%;
   height: auto;
   margin-left: 15%;
@@ -109,9 +110,7 @@ span{
   background-color:rgba(8,70,226,1);
 }
 #carousel-img-caption{
-  /* border: 1px solid red; */
   width: 10%;
-  /* margin-left: 5px; */
 }
 
 /* --------------------------------
