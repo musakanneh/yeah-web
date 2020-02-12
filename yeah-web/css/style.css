@@ -86,6 +86,14 @@ span{
   font-size: 35px;
 }
 
+/* Carousel Styling */
+#carouselExampleIndicators{
+  /* border: 1px solid red; */
+  width: 30%;
+  margin-left: 35%;
+
+}
+
 /* --------------------------------
 * Bar code Sec Styling
 --------------------------------*/
