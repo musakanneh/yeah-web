@@ -42,9 +42,11 @@
   height: 100%;
   margin-left: 80%;
 } */
-#nav-div{
+/* #nav-div{
+  width: 90%;
+  border: 1px solid red;
   background-color: rgba(8,70,226,1);
-}
+} */
 #payment-cap h1{
   /* padding-top: 45px; */
   font-size: 115px;
@@ -60,7 +62,7 @@ nav{
 }
 #header{
   /* height: auto; */
-  background-color: rgba(8,70,226,1);
+  /* background-color: rgba(8,70,226,1); */
 }
 
 /* ------------------------------------
@@ -68,6 +70,8 @@ nav{
 -------------------------------------*/
 #sec-2{
   height: auto;
+  /* border: 1px solid red; */
+  width: 90%;
 }
 #about-us{
   margin-top: 80px;
