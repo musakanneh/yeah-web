@@ -79,15 +79,15 @@ span{
 * Carousel Styling
 ------------------------------*/
 #carouselExampleIndicators{
-  width: 70%;
+  /* width: 70%;
   height: auto;
   margin-left: 15%;
   margin-top: 8%;
-  margin-bottom: 10%;
+  margin-bottom: 10%; */
 }
 #carouselExampleIndicators img{
-  margin-left: 15px;
-  height: 70vh;
+  /* margin-left: 15px; */
+  /* height: 70vh; */
 }
 #carousel-control{
   border:2px solid rgba(8,70,226,1);
