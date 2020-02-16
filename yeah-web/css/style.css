@@ -35,7 +35,7 @@
   font-size: 14px;
 }
 #payment-cap h1{
-  font-size: 115px;
+  font-size: 105px;
   font-weight: bold;
 }
 nav{
@@ -47,7 +47,8 @@ nav{
 -------------------------------------*/
 #sec-2{
   height: auto;
-  width: 90%;
+  width: 92%;
+  margin-left: 2%;
 }
 #about-us{
   margin-top: 80px;
