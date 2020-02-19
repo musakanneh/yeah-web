@@ -4,7 +4,6 @@
   font-family: IBM Plex Sans;
 }
 #input{
-  border:  1px solid red;
   background: transparent;
   opacity: 0.503;
   color: white;
@@ -13,7 +12,6 @@
   outline: none;
 }
 #num{
-  border:  1px solid red;
   background: transparent;
   opacity: 0.503;
   color: white;
@@ -79,26 +77,17 @@ span{
 /* ----------------------------
 * Carousel Styling
 ------------------------------*/
-#carouselExampleIndicators{
-  /* width: 70%;
-  height: auto;
-  margin-left: 15%;
-  margin-top: 8%;
-  margin-bottom: 10%; */
-}
-#carouselExampleIndicators img{
-  /* margin-left: 15px; */
-  /* height: 70vh; */
-}
 #carousel-control{
   border:2px solid rgba(8,70,226,1);
   background-color:rgba(8,70,226,1);
   margin-right:90%;
 }
+
 #carousel-control2{
   border:2px solid rgba(8,70,226,1);
   background-color:rgba(8,70,226,1);
 }
+
 #carousel-img-caption{
   width: 10%;
 }
@@ -110,6 +99,7 @@ span{
   height: 100 auto;
   background-color: #000000;
 }
+
 #scan-to-pay h1{
 	text-align: center;
 	font-weight: bold;
@@ -117,12 +107,14 @@ span{
 	color: rgba(255,255,255,1);
 	letter-spacing: 0.1px;
 }
+
 #scan-to-pay p{
 		text-align: center;
 		font-weight: normal;
 		font-size: 20px;
 		color: rgba(255,255,255,1);
 }
+
 #bar-code-img{
   align-items: center;
   margin-left: 40%;
@@ -142,24 +134,26 @@ span{
  #footer-cover{
    height: auto;
  }
+
  #footer{
    background-color:rgba(8,70,226,1);
  }
+
  #future-of-payment{
   margin-top: -10%;
   text-align: left;
-  font-style: normal;
-  font-weight: lighter;
   font-size: 65px;
   color: rgba(255,255,255,1);
   letter-spacing: 0.1px;
  }
+
  #trade-mark p{
    font-size: 12px;
    letter-spacing: 0.1px;
    color: white;
    text-align: center;
  }
+
  #waitlist-div{
    align-content: flex-end;
  }
@@ -176,3 +170,107 @@ span{
    opacity: 0.503;
    color: white;
  }
+
+ /* Media queries */
+ /* Header */
+ @media (max-width: 767.98px) {
+   .header-img{
+     display: none;
+   }
+
+   .mob-header h1{
+     /* border: 1px solid red; */
+     /* font-size: 20px; */
+   }
+  }
+
+  @media (max-width: 767.98px) {
+    .mobile-font {
+      margin-top: -20%;
+      font-size: 10px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    #sec-2 h2{
+      width: 100%;
+      margin-left: 10px;
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+   .mobile-feat{
+     width: 100%;
+   }
+  }
+
+  #mobile-features-styles{
+    display: none;
+  }
+
+  @media (max-width: 767.98px) { 
+    #mobile-features-styles{
+      display: block;
+      margin-top: 20px;;
+    }
+
+    .sec{
+      margin: 2%;
+      background-color: rgba(128, 128, 128, 0.137);
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .sec h4{
+      color: rgba(8,70,226,1);
+    }
+
+    #features-row{
+      display: none;
+    }
+   }
+
+   @media (max-width: 767.98px) {
+    #scan-to-pay h1{
+      width: 100%;
+      font-size: 50px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    #scan-to-pay p{
+      width: 90%;
+      margin-left: 5%;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #scan-to-pay img{
+      margin-left: 30%;
+      width: 40%;
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .payment-method{
+      width: 100%;
+      padding: 10% 0%;
+    }
+
+    .payment-methods{
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .feature-cover{
+      /* border: 1px solid red; */
+      padding: 5%;
+    }
+   }
+   
+   
+
