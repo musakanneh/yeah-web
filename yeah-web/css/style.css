@@ -171,17 +171,26 @@ span{
    color: white;
  }
 
- /* Media queries */
- /* Header */
+ /* Media queries styling */
  @media (max-width: 767.98px) {
    .header-img{
      display: none;
    }
+  }
 
-   .mob-header h1{
-     /* border: 1px solid red; */
-     /* font-size: 20px; */
-   }
+  .mobile-feat-header{
+    display: none;
+  }
+  
+  @media (max-width: 767.98px){
+    .mobile-feat-header{
+      display: block;
+      width: 100%;
+    }
+
+    .header-mobile-control{
+      display: none;
+    }
   }
 
   @media (max-width: 767.98px) {
@@ -214,7 +223,8 @@ span{
   @media (max-width: 767.98px) { 
     #mobile-features-styles{
       display: block;
-      margin-top: 20px;;
+      margin-top: 20px;
+      margin-left: 2%;
     }
 
     .sec{
@@ -267,10 +277,57 @@ span{
     }
 
     .feature-cover{
-      /* border: 1px solid red; */
       padding: 5%;
     }
    }
+
+  @media (max-width: 767.98px) {
+    .mobile-font {
+      margin-top: -20%;
+      font-size: 10px;
+      width: 100%;
+    }
+  }
+
+  .mobile-sm-styles{
+    display: none;
+  }
+
+
+  @media (max-width: 767.98px){
+    .mobile-sm-styles{
+      display: block;
+      display: flex;
+      margin-top: -20%;
+      font-size: 30px;
+      margin-left: 5%;
+    }
+    .pc-view{
+      display: none;
+    }
+
+    .feature-of-payment-mobile{
+      width: 80%;
+      margin-bottom: 15px;
+      margin-top: 20px;
+    }
+    #future-of-payment{
+       margin-left: 5%;
+       width: 100%;
+       margin-bottom: 40px;
+    }
+
+    .waitlist-mobile{
+      margin-bottom: 20px;
+      width: 90%;
+      margin-left: 2%;
+    }
+
+    #waitlist h4{
+      width: 90%;
+      margin-left: 5%;
+    }
+  }
    
    
 
