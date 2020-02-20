@@ -3,6 +3,7 @@
   padding: 0;
   font-family: IBM Plex Sans;
 }
+
 #input{
   background: transparent;
   opacity: 0.503;
@@ -11,6 +12,7 @@
   border-bottom: 1px solid white;
   outline: none;
 }
+
 #num{
   background: transparent;
   opacity: 0.503;
@@ -20,10 +22,12 @@
   border-bottom: 1px solid white;
   outline: none;
 }
+
 #w-list{
   border: 1px solid white;
   color: rgba(8,70,226,1);
   background-color: white;
+  border-radius: 5px;
   padding: 10px;
   text-decoration: none;
 }
@@ -32,10 +36,12 @@
   color: white;
   font-size: 14px;
 }
+
 #payment-cap h1{
   font-size: 105px;
   font-weight: bold;
 }
+
 nav{
   background-color: rgba(8,70,226,1);
 }
@@ -57,10 +63,16 @@ nav{
   margin-left: 20%;
   color: black;
 }
+
 #features-row{
   width: 100%;
   margin-left: 1%;
 }
+
+.mobile-for-ft-slider{
+  display: none;
+}
+
 #features-row h4{
   font-size: 20px;
   font-weight: bold;
@@ -68,6 +80,7 @@ nav{
   margin-bottom: 22px;
   color: rgba(8,70,226,1);
 }
+
 #feaure-row-div{
   width: 100%;
 }
@@ -75,6 +88,7 @@ nav{
 .feat-elements{
   margin: 4%;
 }
+
 span{
   font-size: 35px;
 }
@@ -105,22 +119,23 @@ span{
   background-color: #000000;
 }
 
-#scan-to-pay h1{
+.scan-to-pay h1{
 	text-align: center;
 	font-weight: bold;
-	font-size: 115px;
+	font-size: 110px;
 	color: rgba(255,255,255,1);
 	letter-spacing: 0.1px;
 }
 
-#scan-to-pay p{
+.scan-to-pay p{
 		text-align: center;
 		font-weight: normal;
 		font-size: 20px;
 		color: rgba(255,255,255,1);
 }
 
-#bar-code-img{
+.bar-code-img{
+  cursor: pointer;
   align-items: center;
   margin-left: 40%;
   width: auto;
@@ -133,6 +148,11 @@ span{
   height: 100 auto;
 }
 
+.feature-cover{
+  width: 70%;
+  margin-left: 15%;
+}
+
 /* ---------------------------------------
 * Footer Styling
  ----------------------------------------*/
@@ -142,6 +162,10 @@ span{
 
  #footer{
    background-color:rgba(8,70,226,1);
+ }
+
+ .media-icons{
+   border: 1px solid red;
  }
 
  #future-of-payment{
@@ -162,6 +186,7 @@ span{
  #waitlist-div{
    align-content: flex-end;
  }
+
  #waitlist h4{
    color: rgba(255,255,255,1);
    font-size: 20px;
@@ -169,6 +194,7 @@ span{
    font-weight: bold;
    letter-spacing: 0.1px;
  }
+
  hr{
    margin-top: 40px;
    background-color: white;
@@ -176,7 +202,9 @@ span{
    color: white;
  }
 
- /* Media queries styling */
+ /* ---------------------------------
+ * Media queries styling 
+ -----------------------------------*/
  @media (max-width: 767.98px) {
    .header-img{
      display: none;
@@ -231,7 +259,7 @@ span{
       margin-top: 20px;
       margin-left: 2%;
     }
-
+    
     .sec{
       margin: 2%;
       background-color: rgba(128, 128, 128, 0.137);
@@ -249,21 +277,21 @@ span{
    }
 
    @media (max-width: 767.98px) {
-    #scan-to-pay h1{
+    .scan-to-pay h1{
       width: 100%;
       font-size: 50px;
       margin-bottom: 20px;
       cursor: pointer;
     }
 
-    #scan-to-pay p{
+    .scan-to-pay p{
       width: 90%;
       margin-left: 5%;
       font-size: 16px;
       cursor: pointer;
     }
 
-    #scan-to-pay img{
+    .scan-to-pay img{
       margin-left: 30%;
       width: 40%;
       cursor: pointer;
@@ -272,12 +300,30 @@ span{
 
   @media (max-width: 767.98px) {
     .payment-method{
+      margin-top: 2%;
+    }
+
+    .mobile-for-ft-slider-cover{
       width: 100%;
-      padding: 10% 0%;
+    }
+
+    .payment-flex{
+      display: flex;
+      width: 100%;
+    }
+
+    .feat{
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+
+    .feat span{
+      cursor: pointer;
+      font-size: 22px;
     }
 
     .payment-methods{
-      font-size: 20px;
+      font-size: 10px;
       font-weight: bold;
     }
 
@@ -294,10 +340,22 @@ span{
     }
   }
 
+
+  @media (max-width: 767.98px) {
+    .dp-for-ft-slider{
+      display: none;
+    }
+
+    .mobile-for-ft-slider{
+      display: block;
+      display: flex;
+      width: 100%;
+    }
+  }
+
   .mobile-sm-styles{
     display: none;
   }
-
 
   @media (max-width: 767.98px){
     .mobile-sm-styles{
