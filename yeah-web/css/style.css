@@ -48,12 +48,13 @@ nav{
   width: 92%;
   margin-left: 2%;
 }
-#about-us{
+
+.about-us{
   margin-top: 80px;
   font-size: 40px;
-  width: 68%;
+  width: 60%;
   text-align: center;
-  margin-left: 16%;
+  margin-left: 20%;
   color: black;
 }
 #features-row{
@@ -69,6 +70,10 @@ nav{
 }
 #feaure-row-div{
   width: 100%;
+}
+
+.feat-elements{
+  margin: 4%;
 }
 span{
   font-size: 35px;
