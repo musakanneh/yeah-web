@@ -4,7 +4,7 @@
   font-family: IBM Plex Sans;
 }
 .heading {
-  background-color: #0060B2;
+  background-color: #0060b2;
   padding-top: 1%;
   height: 100%;
 }
@@ -12,40 +12,64 @@ html {
   scroll-behavior: smooth;
 }
 #particles-js {
-  background-color: #0060B2;
+  background-color: #0060b2;
   height: 100vh;
 }
 
-.a{
-  border: 2px solid #F1F1F1;
+#particles-js-form {
+  background-color: #0060b2;
+  height: 20vh;
+}
+
+.a {
+  border: 2px solid #f1f1f1;
   text-decoration: none;
-  color: #F1F1F1;
+  color: #f1f1f1;
   position: relative;
   padding: 20px 40px;
   font-size: 20px;
   overflow: hidden;
 }
-.a:hover{
+.a:hover {
   transition: 1s ease;
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   text-decoration: none;
-  color: #0060B2;
+  color: #0060b2;
   position: relative;
   padding: 20px 40px;
   font-size: 20px;
   overflow: hidden;
 }
 
-.some-icons{
+.a-form {
+  border: 2px solid #f1f1f1;
+  text-decoration: none;
+  color: #f1f1f1;
+  padding: 5px 20px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.a-form:hover {
+  transition: 1s ease;
+  background-color: #f1f1f1;
+  border: transparent;
+  text-decoration: none;
+  color: #0060b2;
+  padding: 5px 20px;
+  font-size: 20px;
+}
+
+.some-icons {
   padding: 10px;
   font-size: 25px;
   width: 100%;
   border-radius: 15px;
 }
 
-.a:before{
-  content: '';
-  background-color: #F1F1F1;
+.a:before {
+  content: "";
+  background-color: #f1f1f1;
   top: 0;
   left: 10px;
   width: 8%;
@@ -56,28 +80,28 @@ html {
 }
 
 #team a {
-  border: 2px solid #F1F1F1;
+  border: 2px solid #f1f1f1;
 }
 
 #team a:hover {
-  border: 2px solid #F1F1F1;
-  background-color: #F1F1F1;
-  color: #0060B2;
+  border: 2px solid #f1f1f1;
+  background-color: #f1f1f1;
+  color: #0060b2;
   border-radius: 5px;
   transition: 2s ease;
 }
 
 .waitlist-btn a {
-  border: 1px solid #F1F1F1;
+  border: 1px solid #f1f1f1;
   border-radius: 5px;
   padding: 20px 30px;
-  color: #F1F1F1;
+  color: #f1f1f1;
   text-decoration: none;
   font-size: 20px;
 }
 
 .waitlist-btn:hover {
-  background-color: #F1F1F1;
+  background-color: #f1f1f1;
   transition: 1s ease;
 }
 
@@ -131,13 +155,12 @@ html {
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 22px;
-  color: #0060B2;
+  color: #0060b2;
 }
 
 #feaure-row-div {
   width: 80%;
 }
-
 
 .feat-elements {
   margin: 4%;
@@ -151,8 +174,8 @@ span {
 * Carousel Styling
 ------------------------------*/
 #carousel-control {
-  border: 2px solid #0060B2;
-  background-color: #0060B2;
+  border: 2px solid #0060b2;
+  background-color: #0060b2;
   margin-right: 90%;
 }
 
@@ -177,7 +200,7 @@ span {
   text-align: center;
   font-weight: bold;
   font-size: 105px;
-  color: #F1F1F1;
+  color: #f1f1f1;
   letter-spacing: 0.1px;
 }
 
@@ -185,7 +208,7 @@ span {
   text-align: center;
   font-weight: normal;
   font-size: 20px;
-  color: #F1F1F1;
+  color: #f1f1f1;
 }
 
 .loading {
@@ -220,9 +243,15 @@ span {
   animation-timing-function: 1s ease;
 }
 @keyframes bounce-2 {
-  0%   { transform: translateY(0deg); }
-  50%  { transform: translateY(-40px); }
-  100% { transform: translateY(0deg); }
+  0% {
+    transform: translateY(0deg);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0deg);
+  }
 }
 
 @keyframes header-img {
@@ -269,21 +298,21 @@ span {
 }
 
 #footer {
-  background-color: #0060B2;
+  background-color: #0060b2;
 }
 
 #future-of-payment {
   margin-top: -6%;
   text-align: left;
   font-size: 65px;
-  color: #F1F1F1;
+  color: #f1f1f1;
   letter-spacing: 0.1px;
 }
 
 #trade-mark p {
   font-size: 12px;
   letter-spacing: 0.1px;
-  color: #F1F1F1;
+  color: #f1f1f1;
   text-align: center;
 }
 
@@ -303,7 +332,7 @@ hr {
   margin-top: 40px;
   background-color: white;
   opacity: 0.503;
-  color: #F1F1F1;
+  color: #f1f1f1;
 }
 
 .header-img {
@@ -363,14 +392,14 @@ hr {
   display: none;
 }
 
-.payment-methods{
-  color: #0060B2;
+.payment-methods {
+  color: #0060b2;
   font-weight: bold;
   cursor: pointer;
 }
 
-.payment-methods:hover{
-  color: #00377F;
+.payment-methods:hover {
+  color: #00377f;
   font-weight: bold;
   cursor: pointer;
   transition: 1s ease;
@@ -391,7 +420,7 @@ hr {
   }
 
   .sec h4 {
-    color: #0060B2;
+    color: #0060b2;
   }
 
   #features-row {
@@ -448,7 +477,7 @@ hr {
   .payment-methods {
     font-size: 10px;
     font-weight: bold;
-    color: #0060B2;
+    color: #0060b2;
   }
 
   .feature-cover {
@@ -511,7 +540,7 @@ hr {
   #waitlist h4 {
     width: 90%;
     margin-left: 5%;
-    color: #F1F1F1;
+    color: #f1f1f1;
   }
 }
 
@@ -519,11 +548,33 @@ hr {
   form styling 
   --------------------------*/
 .form-sec {
-  width: 80%;
+  font-family: IBM Plex Sans;
+  /* width: 100%; */
+  /* margin: 20%; */
+  /* border: 1px solid red; */
+  /* padding-left: 30%; */
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.testers h1 {
+  color: #f1f1f1;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 3%;
+  font-weight: bold;
+}
+.form-control {
+  border: 1px solid #0060b2;
+  width: 100%;
+  /* border: 1px solid red; */
+  padding: 20px;
+  border-radius: 0px;
 }
 
 @media (max-width: 767.98px) {
   .form-sec {
     width: 100%;
+    /* padding-left: -30%; */
   }
 }
