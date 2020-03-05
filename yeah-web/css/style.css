@@ -4,64 +4,81 @@
   font-family: IBM Plex Sans;
 }
 .heading {
-  background-color: rgba(8, 70, 226, 1);
+  background-color: #0060B2;
   padding-top: 1%;
   height: 100%;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 #particles-js {
-  background-color: rgba(8, 70, 226, 1);
+  background-color: #0060B2;
   height: 100vh;
 }
 
+.a{
+  border: 2px solid #F1F1F1;
+  text-decoration: none;
+  color: #F1F1F1;
+  position: relative;
+  padding: 20px 40px;
+  font-size: 20px;
+  overflow: hidden;
+}
+.a:hover{
+  transition: 1s ease;
+  background-color: #F1F1F1;
+  text-decoration: none;
+  color: #0060B2;
+  position: relative;
+  padding: 20px 40px;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.some-icons{
+  padding: 10px;
+  font-size: 25px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.a:before{
+  content: '';
+  background-color: #F1F1F1;
+  top: 0;
+  left: 10px;
+  width: 8%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transform: skew(-15deg);
+}
+
 #team a {
-  border: 2px solid white;
-  border-radius: 5px;
+  border: 2px solid #F1F1F1;
 }
 
 #team a:hover {
-  border: 2px solid white;
-  background-color: white;
-  color: rgba(8, 70, 226, 1);
+  border: 2px solid #F1F1F1;
+  background-color: #F1F1F1;
+  color: #0060B2;
   border-radius: 5px;
   transition: 2s ease;
 }
 
 .waitlist-btn a {
-  border: 1px solid white;
+  border: 1px solid #F1F1F1;
   border-radius: 5px;
   padding: 20px 30px;
-  color: white;
+  color: #F1F1F1;
   text-decoration: none;
   font-size: 20px;
-  /* position: relative; */
 }
 
-.waitlist-btn a:before{
-  content: '';
-  background-color: #544336;
-  top: 0;
-  left: 0;
-  width: 120px;
-  height: 100px;
-  /* position: absolute; */
-  z-index: -1;
-  transform: skew(-15deg);
-}
-
-/* .waitlist-btn:hover {
-  background-color: white;
+.waitlist-btn:hover {
+  background-color: #F1F1F1;
   transition: 1s ease;
-} */
-
-#w-list {
-  border: 1px solid red;
-  border: 1px solid white;
-  color: rgba(8, 70, 226, 1);
-  background-color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  padding: 10px;
 }
 
 #nav a {
@@ -102,8 +119,6 @@
 
 #features-row {
   width: 100%;
-  /* border: 1px solid red; */
-  /* margin-top: 50%; */
   margin-left: 0.2%;
 }
 
@@ -116,22 +131,13 @@
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 22px;
-  color: rgba(8, 70, 226, 1);
+  color: #0060B2;
 }
 
 #feaure-row-div {
   width: 80%;
-  /* margin-left: 10px; */
-  /* border: 1px solid rgba(128, 128, 128, 0.041); */
 }
 
-/* #feaure-row-div:hover{
-  border: transparent;
-  background-color: rgba(128, 128, 128, 0.137);
-  box-shadow: rgba(128, 128, 128, 0.356);
-  cursor: pointer;
-  transition: 2s ease;
-} */
 
 .feat-elements {
   margin: 4%;
@@ -145,8 +151,8 @@ span {
 * Carousel Styling
 ------------------------------*/
 #carousel-control {
-  border: 2px solid rgba(8, 70, 226, 1);
-  background-color: rgba(8, 70, 226, 1);
+  border: 2px solid #0060B2;
+  background-color: #0060B2;
   margin-right: 90%;
 }
 
@@ -164,14 +170,14 @@ span {
 --------------------------------*/
 #bar-code-sec {
   height: 100 auto;
-  background-color: #000000;
+  background-color: #151515;
 }
 
 .scan-to-pay h1 {
   text-align: center;
   font-weight: bold;
-  font-size: 110px;
-  color: rgba(255, 255, 255, 1);
+  font-size: 105px;
+  color: #F1F1F1;
   letter-spacing: 0.1px;
 }
 
@@ -179,7 +185,7 @@ span {
   text-align: center;
   font-weight: normal;
   font-size: 20px;
-  color: rgba(255, 255, 255, 1);
+  color: #F1F1F1;
 }
 
 .loading {
@@ -188,42 +194,50 @@ span {
 
 /* Animations for coin sample */
 @keyframes loading {
-  /* 0% {
+  0% {
     transform: rotateX(0deg) rotateY(0deg);
-  } */
+    transform: rotateX(0deg) rotateY(0deg);
+  }
   50% {
     transform: rotateX(0deg) rotateY(180deg);
+    transform: rotateX(180deg) rotateY(0deg);
   }
 
   100% {
-    transform: rotateX(0deg) rotateY(180deg);
-  }
-
-  /* 100% {
     transform: rotateX(180deg) rotateY(180deg);
-  } */
-  
+    transform: rotateX(0deg) rotateY(0deg);
+  }
 }
 
-
 /* Animations for coin image header */
-.header {
+.header-img {
   animation: loading 10s linear infinite;
 }
 
+/* bouncing header */
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: 1s ease;
+}
+@keyframes bounce-2 {
+  0%   { transform: translateY(0deg); }
+  50%  { transform: translateY(-40px); }
+  100% { transform: translateY(0deg); }
+}
+
 @keyframes header-img {
-  /* 0% {
+  0% {
     transform: rotateX(0deg) rotateY(0deg);
-  } */
-
+    transform: rotateX(0deg) rotateY(0deg);
+  }
   50% {
-    transform: rotateX(90deg) rotateY(10deg);
+    transform: rotateX(0deg) rotateY(180deg);
+    transform: rotateX(90deg) rotateY(90deg);
   }
-
   100% {
-    transform: rotateX(180deg) rotateY(80deg);
+    transform: rotateX(90deg) rotateY(90deg);
+    transform: rotateX(90deg) rotateY(90deg);
   }
-  
 }
 
 .bar-code-img {
@@ -250,24 +264,26 @@ span {
  ----------------------------------------*/
 #footer-cover {
   height: auto;
+  margin-top: -5%;
+  /* border: 1px solid red; */
 }
 
 #footer {
-  background-color: rgba(8, 70, 226, 1);
+  background-color: #0060B2;
 }
 
 #future-of-payment {
-  margin-top: -10%;
+  margin-top: -6%;
   text-align: left;
   font-size: 65px;
-  color: rgba(255, 255, 255, 1);
+  color: #F1F1F1;
   letter-spacing: 0.1px;
 }
 
 #trade-mark p {
   font-size: 12px;
   letter-spacing: 0.1px;
-  color: white;
+  color: #F1F1F1;
   text-align: center;
 }
 
@@ -287,7 +303,7 @@ hr {
   margin-top: 40px;
   background-color: white;
   opacity: 0.503;
-  color: white;
+  color: #F1F1F1;
 }
 
 .header-img {
@@ -347,6 +363,19 @@ hr {
   display: none;
 }
 
+.payment-methods{
+  color: #0060B2;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.payment-methods:hover{
+  color: #00377F;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
 @media (max-width: 767.98px) {
   #mobile-features-styles {
     display: block;
@@ -362,7 +391,7 @@ hr {
   }
 
   .sec h4 {
-    color: rgba(8, 70, 226, 1);
+    color: #0060B2;
   }
 
   #features-row {
@@ -419,6 +448,7 @@ hr {
   .payment-methods {
     font-size: 10px;
     font-weight: bold;
+    color: #0060B2;
   }
 
   .feature-cover {
@@ -481,6 +511,7 @@ hr {
   #waitlist h4 {
     width: 90%;
     margin-left: 5%;
+    color: #F1F1F1;
   }
 }
 
