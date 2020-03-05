@@ -549,10 +549,6 @@ hr {
   --------------------------*/
 .form-sec {
   font-family: IBM Plex Sans;
-  /* width: 100%; */
-  /* margin: 20%; */
-  /* border: 1px solid red; */
-  /* padding-left: 30%; */
   margin-top: 10%;
   margin-bottom: 5%;
 }
@@ -567,7 +563,6 @@ hr {
 .form-control {
   border: 1px solid #0060b2;
   width: 100%;
-  /* border: 1px solid red; */
   padding: 20px;
   border-radius: 0px;
 }
@@ -575,6 +570,5 @@ hr {
 @media (max-width: 767.98px) {
   .form-sec {
     width: 100%;
-    /* padding-left: -30%; */
   }
 }
