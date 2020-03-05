@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: IBM Plex Sans;
+  /* border: 1px solid red; */
+  /* font-family: IBM Plex Sans; */
 }
 .heading {
   background-color: #0060b2;
@@ -220,7 +221,6 @@ span {
     transform: rotateX(0deg) rotateY(180deg);
     transform: rotateX(180deg) rotateY(0deg);
   }
-
   100% {
     transform: rotateX(180deg) rotateY(180deg);
     transform: rotateX(0deg) rotateY(0deg);
@@ -237,6 +237,7 @@ span {
   animation-name: bounce-2;
   animation-timing-function: 1s ease;
 }
+
 @keyframes bounce-2 {
   0% {
     transform: translateY(0deg);
@@ -289,7 +290,6 @@ span {
 #footer-cover {
   height: auto;
   margin-top: -5%;
-  /* border: 1px solid red; */
 }
 
 #footer {
@@ -389,6 +389,8 @@ hr {
 
 .payment-methods {
   color: #0060b2;
+  font-family:IBM Plex Sans;
+  border: solid 1px solid red;
   font-weight: bold;
   cursor: pointer;
 }
@@ -512,6 +514,7 @@ hr {
     font-size: 30px;
     margin-left: 5%;
   }
+
   .pc-view {
     display: none;
   }
@@ -521,11 +524,13 @@ hr {
     margin-bottom: 15px;
     margin-top: 20px;
   }
+
   #future-of-payment {
     margin-left: 5%;
     width: 100%;
     margin-bottom: 40px;
   }
+
   .waitlist-mobile {
     margin-bottom: 20px;
     width: 90%;
@@ -555,6 +560,7 @@ hr {
   padding-top: 3%;
   font-weight: bold;
 }
+
 .form-control {
   border: 1px solid #0060b2;
   width: 100%;
