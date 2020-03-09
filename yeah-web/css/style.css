@@ -38,7 +38,7 @@
   width: 100%;
   color: #ffffff;
   font-family: "IBM Plex Sans";
-  font-size: 110px;
+  font-size: 100px;
   font-weight: 700;
   padding-top: 12%;
   letter-spacing: 1px;
@@ -193,11 +193,28 @@
   font-weight: bold;
   margin-top: 8%;
 }
+.slider-bg{
+  /* border: 1px solid red; */
+  /* height: 100%; */
+  /* height: 100%; */
+  /* padding-bottom: 50%; */
+  /* margin-top: 10%; */
+}
+.slider-cov{
+  border: 1px solid red;
+  height: 100%;
+  width: 100%;
+}
+.slide-sec-one{
+  border: 1px solid red;
+  height: 100%;
+}
 
 .feat-sliders {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  background-color: #0846e2;
   margin-bottom: 10%;
-  padding-left: 10%;
+  /* padding-left: 5%; */
 }
 
 /* ------------------------------------
@@ -264,7 +281,7 @@ span {
 --------------------------------*/
 #bar-code-sec {
   height: 100 auto;
-  background-color: #000000;
+  background-color: #151515;
 }
 .scan-to-pay img {
   width: 40%;
@@ -415,6 +432,7 @@ hr {
 
 .payment-methods {
   color: #0060b2;
+  border: 1px solid red;
   font-family: "IBM Plex Sans";
   font-weight: bold;
   cursor: pointer;
@@ -474,7 +492,7 @@ hr {
   height: 261px;
   color: #ffffff;
   font-family: "IBM Plex Sans";
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 300;
   letter-spacing: 1px;
 }
