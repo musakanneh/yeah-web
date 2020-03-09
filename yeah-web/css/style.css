@@ -193,28 +193,20 @@
   font-weight: bold;
   margin-top: 8%;
 }
-.slider-bg{
+.slider-bg {
   /* border: 1px solid red; */
-  /* height: 100%; */
-  /* height: 100%; */
-  /* padding-bottom: 50%; */
-  /* margin-top: 10%; */
 }
-.slider-cov{
-  border: 1px solid red;
+.slider-cov {
   height: 100%;
   width: 100%;
 }
-.slide-sec-one{
-  border: 1px solid red;
+.slide-sec-one {
+  margin-top: 10%;
+  margin-bottom: 10%;
   height: 100%;
 }
-
-.feat-sliders {
-  /* border: 1px solid red; */
-  background-color: #0846e2;
-  margin-bottom: 10%;
-  /* padding-left: 5%; */
+.slide-sec-one img {
+  width: 100%;
 }
 
 /* ------------------------------------
@@ -355,15 +347,14 @@ span {
 
 #waitlist-div {
   align-content: flex-end;
-  /* border: 1px solid red; */
 }
 
 #waitlist h4 {
-color: #ffffff;
-font-family: "IBM Plex Sans";
-font-size: 25px;
-font-weight: 700;
-letter-spacing: 0.31px;
+  color: #ffffff;
+  font-family: "IBM Plex Sans";
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.31px;
 }
 
 hr {
@@ -425,24 +416,19 @@ hr {
     width: 100%;
   }
 }
-
 #mobile-features-styles {
   display: none;
 }
 
 .payment-methods {
   color: #0060b2;
-  border: 1px solid red;
+  width: 100%;
+  height: 141px;
+  color: #0745e0;
   font-family: "IBM Plex Sans";
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.payment-methods:hover {
-  color: #00377f;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 1s ease;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 66px;
 }
 
 @media (max-width: 767.98px) {
@@ -451,18 +437,15 @@ hr {
     margin-top: 20px;
     margin-left: 2%;
   }
-
   .sec {
     margin: 2%;
     background-color: rgba(128, 128, 128, 0.137);
     border-radius: 5px;
     cursor: pointer;
   }
-
   .sec h4 {
     color: #0060b2;
   }
-
   .features-row {
     display: none;
   }
