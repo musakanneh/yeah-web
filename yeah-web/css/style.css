@@ -4,6 +4,22 @@
   box-sizing: border-box;
   font-family: "IBM Plex Sans";
 }
+
+/* mobile design */
+/* @media(max-width:763px){
+ 
+} */
+@media (max-width: 767.98px) {
+  .tm-header {
+    /* border: 1px solid red; */
+    /* width: 10%; */
+  }
+  .pay-mob {
+    border: 1px solid red;
+    /* font-size: 10px; */
+    /* color: red; */
+  }
+}
 .tm-header {
   background-color: #2868e2;
   width: 100%;
@@ -80,15 +96,15 @@
   font-family: "Apple Color Emoji";
 }
 .tm-about {
-  width: 1088px;
-  margin-left: 7%;
+  width: 100%;
+  margin-left: 25%;
   height: 440px;
   color: #000000;
   text-align: center;
   font-family: "IBM Plex Sans";
-  font-size: 57px;
+  font-size: 50px;
   font-weight: 300;
-  line-height: 75px;
+  line-height: 60px;
 }
 
 .header-changes span:before {
@@ -193,9 +209,7 @@
   font-weight: bold;
   margin-top: 8%;
 }
-.slider-bg {
-  /* border: 1px solid red; */
-}
+
 .slider-cov {
   height: 100%;
   width: 100%;
@@ -319,7 +333,6 @@ span {
 #advert-sec {
   height: 100 auto;
 }
-
 .feature-cover {
   width: 70%;
   margin-left: 15%;
@@ -328,27 +341,18 @@ span {
 /* ---------------------------------------
 * Footer Styling
  ----------------------------------------*/
-/* #footer-cover {
-  height: 100%;
-  border: 1px solid red;
-  margin-top: -5%;
-} */
-
 #footer {
   background-color: #0060b2;
 }
-
 #trade-mark p {
   font-size: 12px;
   letter-spacing: 0.1px;
   color: #f1f1f1;
   text-align: center;
 }
-
 #waitlist-div {
   align-content: flex-end;
 }
-
 #waitlist h4 {
   color: #ffffff;
   font-family: "IBM Plex Sans";
@@ -356,14 +360,12 @@ span {
   font-weight: 700;
   letter-spacing: 0.31px;
 }
-
 hr {
   margin-top: 40px;
   background-color: white;
   opacity: 0.503;
   color: #f1f1f1;
 }
-
 .header-img {
   width: 60%;
   margin-left: 40%;
@@ -373,27 +375,6 @@ hr {
 /* ---------------------------------
  * Media queries styling 
  -----------------------------------*/
-@media (max-width: 767.98px) {
-  .header-img {
-    display: none;
-  }
-}
-
-.mobile-feat-header {
-  display: none;
-}
-
-@media (max-width: 767.98px) {
-  .mobile-feat-header {
-    display: block;
-    width: 100%;
-  }
-
-  .header-mobile-control {
-    display: none;
-  }
-}
-
 @media (max-width: 767.98px) {
   .mobile-font {
     margin-top: -20%;
