@@ -7,8 +7,17 @@
 }
 .form-control {
   border-radius: 0;
-  width: 80%;
-  padding: 5% 0%;
+  border: 1px solid #005fb2a2;
+}
+.send-message-btn{
+  font-family: "IBM Plex Sans", sans-serif !important;
+  background-color: #0846e2;
+  border-radius: 0;
+}
+.back-btn{
+  font-family: "IBM Plex Sans", sans-serif !important;
+  border-radius: 0;
+  background-color: #151515;
 }
 #logo {
   width: 80%;
