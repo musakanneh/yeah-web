@@ -5,6 +5,10 @@
   font-family: "IBM Plex Sans", sans-serif !important;
   text-rendering: optimizeLegibility;
 }
+.pay-slide{
+  padding-top: 15%;
+  padding-left: 5%;
+}
 .heading {
   background-color: #0a1ed1;
   padding-top: 1%;
@@ -62,9 +66,8 @@
   font-weight: bold;
 }
 .header-image {
-  width: 90%;
+  width: 100%;
   margin-top: 4%;
-  margin-left: 12%;
 }
 .cover {
   max-width: 96%;
@@ -107,16 +110,11 @@
   font-weight: 380;
   line-height: 60px;
 }
-
 .some-icons {
   padding: 10px;
   font-size: 25px;
   width: 100%;
   border-radius: 15px;
-}
-.slide-sec-one {
-  margin-bottom: 10%;
-  height: 100%;
 }
 .slide-sec-one img {
   width: 100%;
@@ -263,6 +261,7 @@ hr {
   }
   .join-btn-mob {
     width: 90%;
+    /* border: 1px solid red; */
     background-color: #f1f1f1;
     color: #0a1ed1;
   }
@@ -282,11 +281,11 @@ hr {
     display: none;
   }
   .join-btn {
-    margin-top: 80%;
-    width: 80%;
+    margin-top: 85%;
+    width: 90%;
     background-color: #f1f1f1;
     color: #0a1ed1;
-    margin-left: 10%;
+    margin-left: 3%;
   }
   .heading {
     height: 80vh;
@@ -320,15 +319,16 @@ hr {
     margin-bottom: 15%;
     margin-top: 10%;
     width: 85%;
+    border: 1px solid red;
   }
   .tm-payment h1 {
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 5%;
     height: auto;
     width: 100%;
   }
   .tm-payment p {
-    font-size: 22px;
+    font-size: 20px;
   }
   .mobile-phone {
     display: none;
