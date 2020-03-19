@@ -1,0 +1,272 @@
+
+/* small phones */
+@media only screen and (max-width: 480px) {
+  #mobile-features-styles {
+    display: block;
+    color: #e5e5e5;
+    width: 96%;
+    margin-left: 2%;
+  }
+  .feature-of-payment-mobile {
+    height: auto;
+    width: 100%;
+    font-size: 20px !important;
+  }
+  .tm-payment p {
+    font-size: 22px;
+    margin-top: 2%;
+  }
+
+  .join-btn-mob {
+    border-radius: 10px;
+    width: 50%;
+    font-size: 20px !important;
+    margin-left: 20%;
+    margin-top: -3%;
+    background-color: #e5e5e5;
+    color: #0a1ed1;
+  }
+  
+  .coin-vid {
+    display: none;
+  }
+  .scan-to-pay h1 {
+    font-size: 110px !important;
+    line-height: 150px;
+  }
+  
+  .sec h4 {
+    color: #0a1ed1;
+    font-size: 20px !important;
+  }
+  .pc-view {
+    display: none;
+  }
+  .sec {
+    margin: 1%;
+    background-color: #151515;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .features-row {
+    display: none;
+  }
+  .tm-about {
+    width: 90%;
+    font-size: 30px !important;
+    position: relative;
+    margin: 1.5rem;
+    line-height: 55px;
+    font-size: 45px;
+  }
+  .heading {
+    height: 100vh;
+  }
+  .tm-payment p {
+    font-size: 15px !important;
+    margin-top: 2%;
+  }
+  .mobile-phone {
+    display: block;
+    position: absolute;
+    width: 50%;
+    margin-left: 48%;
+  }
+  .tm-payment h1 {
+    font-size: 50px !important;
+    position: relative;
+    width: 55%;
+    padding-left: 1%;
+    padding-top: 5%;
+  }
+  .join-btn {
+    margin-top: 60%;
+    width: 45%;
+    padding: 2% 0;
+    font-size: 20px !important;
+    margin-left: 2%;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    color: #0a1ed1;
+  }
+  .navbar-toggler-icon {
+    color: #e5e5e5;
+    padding: 0;
+    margin-left: -70%;
+  }
+}
+
+/* ipods */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    width: 100%;
+  }
+  .heading {
+    height: 100vh;
+  }
+  #mobile-features-styles {
+    display: block;
+    color: #e5e5e5;
+    width: 96%;
+    margin-top: 10%;
+    margin-left: 2%;
+  }
+  .sec {
+    margin: 1%;
+    background-color: #151515;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  hr {
+    margin-top: 20%;
+  }
+  .sec h4 {
+    color: #0a1ed1;
+  }
+  .features-row {
+    display: none;
+  }
+  .join-btn {
+    margin-top: 55%;
+    width: 45%;
+    padding: 2% 0;
+    margin-left: 2%;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    color: #0a1ed1;
+  }
+  .navbar-toggler-icon {
+    color: #e5e5e5;
+    padding: 0;
+    margin-left: -70%;
+  }
+  .tm-payment p {
+    font-size: 22px;
+    margin-top: 2%;
+  }
+  .mobile-phone {
+    display: block;
+    position: absolute;
+    width: 50%;
+    margin-left: 48%;
+  }
+
+  /* About us */
+  .tm-about {
+    width: 90%;
+    font-size: 35px !important;
+    position: relative;
+    margin: 1.5rem;
+    line-height: 55px;
+    font-size: 45px;
+  }
+  .lg-head {
+    width: 15%;
+  }
+  .mobile-feat {
+    width: 100%;
+  }
+  .iphonepng {
+    width: 100%;
+  }
+  .join-btn-mob {
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 20%;
+    padding: 10px 0;
+    background-color: #e5e5e5;
+    color: #0a1ed1;
+  }
+  footer {
+    height: 100%;
+  }
+  .mobile-sm-styles {
+    display: block;
+  }
+  .scan-to-pay h1 {
+    font-size: 100px;
+    line-height: 100px;
+    cursor: pointer;
+  }
+  .feature-of-payment-mobile {
+    padding-top: 14%;
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .code-mobile {
+    height: 50%;
+  }
+  .scan-to-pay p {
+    font-size: 16px;
+    width: 100%;
+    margin-top: -35%;
+    text-align: center;
+    cursor: pointer;
+  }
+  .scan-to-pay img {
+    margin-left: 30%;
+    width: 40%;
+    cursor: pointer;
+  }
+  .coin-vid {
+    display: block;
+    width: 10%;
+    margin-bottom: 10%;
+  }
+  .dp-for-ft-slider {
+    display: none;
+  }
+  .mobile-sm-styles {
+    display: block;
+    display: flex;
+    font-size: 30px;
+  }
+  .pc-view {
+    display: none;
+  }
+  #waitlist h4 {
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+    color: #e5e5e5;
+  }
+}
+
+/* small to big tablets */
+@media only screen and (max-width: 1023px) {
+  .tm-payment h1 {
+    font-size: 50px;
+  }
+  .join-btn {
+    margin-left: 1%;
+    border-radius: 10px;
+  }
+  .tm-payment p {
+    font-size: 20px;
+  }
+  .scan-to-pay p {
+    margin-top: -11%;
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  .scan-to-pay h1 {
+    font-size: 150px;
+    line-height: 150px;
+  }
+}
+
+/* ipods and all */
+@media only screen and (max-width: 1140px) {
+  .tm-payment h1 {
+    font-size: 90px;
+    height: auto;
+  }
+  .scan-to-pay p {
+    margin-top: -10%;
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+}

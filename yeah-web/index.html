@@ -2,48 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
     <link rel="stylesheet" href="web-resources/normalize.css" />
     <link rel="stylesheet" href="web-resources/fluid-grid.css" />
-    <link rel="stylesheet" type="text/css" href="web-resources/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="web-resources/animate.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,300,400,400i,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
     <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="resources/css/media-queries.css" />
     <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css" />
-    <script src="resources/js/particles.js"></script>
-    <script src="resources/js/jquery.js"></script>
-    <script src="resources/js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Yeah Pay</title>
   </head>
 
   <body>
     <header class="heading">
-      <nav class="cover navbar navbar-expand-lg container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navigation-bar"
-        >
-          <span class="navbar-toggler-icon">&#9776;</span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img
-            src="resources/img/logo-main.png"
-            class="img-fluid"
-            alt="Responsive image"
-            id="logo"
-          />
-        </a>
+      <nav class="container-fluid navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar">
+          <span class="navbar-toggler-icon">&#9776;</span></button>
+        <a class="navbar-brand" href="#"><img src="resources/img/logo-main.png" class="img-fluid" alt="Responsive image" id="logo"/></a>
         <div class="collapse navbar-collapse" id="navigation-bar">
-          <ul class="navbar-nav ml-auto" id="nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
             <li id="team" class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
@@ -54,90 +35,53 @@
 
       <div class="row cover">
         <div class="col-md-8 tm-payment">
-          <h1>
-            Payments <br />
-            made simpler
-          </h1>
+          <h1> Payments <br />made simpler</h1>
           <p>All you need is a phone number.</p>
         </div>
         <div class="col-md-4 mobile-phone">
-          <img
-            src="resources/img/iPhone.png"
-            class="header-image img-fluid"
-            alt="Responsive image"
-          />
+          <img src="resources/img/iPhone.png" class="header-image img-fluid wp-2" alt="Responsive image"/>
         </div>
 
         <button
-          type="button"
-          class="join-btn btn "
-          data-toggle="modal"
-          data-target="#exampleModal"
-          data-whatever="@mdo"
-        >
+          type="button" class="join-btn btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
           Join waitlist 👍🏾
         </button>
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">
                   Add me to the early access waitlist 👍🏾
                 </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <form>
+                <form method="post" id="formSample" action="">
                   <div class="form-group">
-                    <input
-                      value="Name"
-                      type="text"
-                      class="form-control"
-                      id="full-name"
-                    />
+                       <label for="name">Name</label>
+                       <input type="text" name="name" id="name" placeholder="Fullname">
                   </div>
                   <div class="form-group">
-                    <input
-                      value="Phone Number"
-                      type="text"
-                      class="form-control"
-                      id="full-name"
-                    />
+                       <label for="phone">email</label>
+                       <input type="email" id="phone" name="email" placeholder="email">
                   </div>
                   <div class="form-group">
-                    <input
-                      value="Email"
-                      type="text"
-                      class="form-control"
-                      id="full-name"
-                    />
-                  </div>
+                    <label for="phone">phone</label>
+                    <input type="number" id="phone" name="phone" placeholder="number">
+               </div>
+                  <div id="buttonClick">
+                  <button
+                  class="btn btn-primary" >Submit</button></div>
                 </form>
               </div>
               <div class="modal-footer">
                 <button
-                  type="button"
                   class="btn back-btn btn-secondary"
                   data-dismiss="modal"
                 >
                   Back
-                </button>
-                <button type="button" class="btn send-message-btn btn-primary">
-                  Send message
                 </button>
               </div>
             </div>
@@ -146,14 +90,13 @@
       </div>
     </header>
 
-    <section class="container-fluid">
+    <section class="container-fluid" id="sticky-nav-start">
       <img class="mt-3 lg-head mb-5" src="resources/img/yh.png" alt="" />
       <div class="row about-us-cover">
-        <div class="col-md-12">
+        <div class="col-md-12 mt-5">
           <h2
-            class="tm-about wow fadeInUp cover"
-            data-wow-delay=".1s"
-            data-wow-duration="1s"
+            class="tm-about cover wp-1"
+            data-wow-delay=".2s" data-wow-duration=".5s"
           >
             Yeah provides simple and modern payment services to anyone with a
             phone number. With our app, you can spend, send money, pay bills,
@@ -177,7 +120,7 @@
           <div
             class="feat-elements wow fadeInUp"
             data-wow-delay="1s"
-            data-wow-duration="1.5s"
+            data-wow-duration="1s"
           >
             <span>🔗</span>
             <h4>Integreted account</h4>
@@ -186,10 +129,7 @@
         </div>
         <div class="col-md-3" id="feaure-row-div">
           <div
-            class="feat-elements wow fadeInUp"
-            data-wow-delay="2s"
-            data-wow-duration="1.5s"
-          >
+            class="feat-elements wow fadeInUp" data-wow-delay="2s" data-wow-duration="1s">
             <span>👀</span>
             <h4>Transparent fees</h4>
             <p>
@@ -201,8 +141,7 @@
         <div class="col-md-3" id="feaure-row-div">
           <div
             class="feat-elements wow fadeInUp"
-            data-wow-delay="3s"
-            data-wow-duration="1.5s">
+            data-wow-delay="3s" data-wow-duration="1s">
             <span>🔒</span>
             <h4>Protected data</h4>
             <p>
@@ -245,19 +184,14 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid mt-5 dimension" id="bar-code-sec">
-      <img class="mt-3 lg-head ml-4" src="resources/img/logo-main.png" alt="" />
+    <section class="container-fluid mt-5 dimension" id="bar-code-sec" id="sticky-bar-start">
+      <img class="mt-3 lg-head" src="resources/img/logo-main.png" alt="" />
       <div class="row">
         <div class="col-md-3">
           <div class="coins coin_2 prllx" data-prllx-d="-20">
             <div class="prllx-elt">
               <video
-                class="coin-vid cover"
-                autoplay
-                loop
-                muted
-                playsinline
-                preload="none"
+                class="coin-vid cover" autoplay loop muted playsinline preload="none"
               >
                 <source src="resources/img/coin_3.webm" type="video/webm" />
                 <source src="resources/img/coin_3.webm" type="video/mp4" />
@@ -295,11 +229,8 @@
 
     <section class="cover container-fluid mobile-feat">
       <img class="mt-3 lg-head mb-5" src="resources/img/yh.png" alt="" />
-      <div
-        id="carouselExampleIndicators"
-        class="row carousel slide feature-cover"
-        data-ride="carousel"
-      >
+      <div id="carouselExampleIndicators" class="row carousel slide feature-cover"
+        data-ride="carousel">
         <ol class="carousel-indicators">
           <li
             data-target="#carouselExampleIndicators"
@@ -314,29 +245,23 @@
           <div class="col-md-6">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img
-                src="resources/img/iPhone.png"
-                  class="img-fluid d-block w-100"
-                  alt="Responsive image"
-                />
+                <img src="resources/img/iPhone.png"
+                  class="img-fluid wp-2 iphonepng d-block"
+                  alt="Responsive image"/>
               </div>
               <div class="carousel-item">
-                <img
-                src="resources/img/iPhone.png"
-                  class="img-fluid d-block w-100"
-                  alt="Responsive image"
-                />
+                <img src="resources/img/iPhone.png"
+                  class="img-fluid iphonepng d-block"
+                  alt="Responsive image"/>
               </div>
               <div class="carousel-item">
-                <img
-                src="resources/img/iPhone.png"
-                  class="img-fluid d-block w-100"
-                  alt="Responsive image"
-                />
+                <img src="resources/img/iPhone.png"
+                  class="img-fluid iphonepng d-block"
+                  alt="Responsive image"/>
               </div>
             </div>
           </div>
-          <div class="col-md-6 pay-slide">
+          <div class="col-md-6 pay-slide  wp-3">
             <div class="dp-for-ft-slider">
               <div class="">
                 <span class="payment-methods"
@@ -366,7 +291,7 @@
       <div class="cover pt-5">
         <div class="row mobile-sm-styles">
           <div class="col">
-            <a class="" href="#"> <i class="fa fa-facebook text-white"></i></a>
+            <a class="" href="#"> <i class="fab fa-facebook-f"></i></a>
           </div>
           <div class="col">
             <a class="" href="#"> <i class="fa fa-instagram text-white"></i></a>
@@ -508,6 +433,7 @@
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
+    
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -519,10 +445,15 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script> -->
+    <!-- <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script> -->
+    <!-- <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script> -->
+    <!-- <script src="vendors/js/jquery.waypoints.min.js"></script> -->
+    <script src="resources/js/jquery.waypoints.min.js"></script>
+    <!-- <script src="resources/js/particles.js"></script> -->
+    <!-- <script src="resources/js/jquery.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+    <script src="resources/js/scripts.js"></script>
     <script src="resources/js/wow.min.js"></script>
     <script>
       new WOW().init();
