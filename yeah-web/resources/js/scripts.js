@@ -47,15 +47,15 @@ $(document).ready(function() {
 function firstCall(e) {
   e.preventDefault();
 
-  var htmlForm = document.getElementById('formSample');
+  var htmlForm = document.getElementById("formSample");
   var form = new FormData(htmlForm);
   form.append("url", "http://api.theyeah.io/api/v1/waiting_list_post");
-  
-  // perform the ajax request
-  form.forEach((e, i) => { console.log(i, e); });
+
+  form.forEach((e, i) => {
+    console.log(i, e);
+  });
 }
 
 $(document).ready(function() {
-// You can use named function if you need to reuse it elsewhere
-$('#buttonClick').on('click', 'button', firstCall);
+  $("#buttonClick").on("click", "button", firstCall);
 });
