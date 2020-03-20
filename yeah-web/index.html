@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="web-resources/normalize.css" />
     <link rel="stylesheet" href="web-resources/fluid-grid.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="web-resources/animate.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,300,400,400i,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -32,13 +33,19 @@
         </div>
       </nav>
       <div class="row cover">
+       
         <div class="col-md-8 tm-payment">
           <h1> Payments <br />made simpler</h1>
           <p>All you need is a phone number.</p>
         </div>
         <div class="col-md-4 mobile-phone">
-          <img src="resources/img/iPhone.png" class="header-image img-fluid wp-2" alt="Responsive image"/>
+          <!-- <img src="resources/img/iPhone.png" class="header-image img-fluid wp-2" alt="Responsive image"/> -->
+           <video
+        class="cover" id="bg-video" autoplay loop muted playsinline preload="none">
+        <source class="header-image" src="resources/img/yeah-patrick.mp4" type="video/mp4" />
+      </video>
         </div>
+        
         <button
           type="button" class="join-btn btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
           Join waitlist 👍🏾
@@ -86,14 +93,15 @@
     <section class="container-fluid" id="sticky-nav-start">
       <img class="mt-3 lg-head mb-5" src="resources/img/yh.png" alt="" />
       <div class="row about-us-cover">
-        <div class="col-md-12 mt-5">
+        <div class="col-md-4">
+          <img src="resources/img/iPhone.png" class="overview-image img-fluid wp-2" alt="Responsive image"/>
+        </div>
+        <div class="col-md-8 mt-5">
           <h2
             class="tm-about cover wp-1"
             data-wow-delay=".2s" data-wow-duration=".5s"
           >
-            Yeah provides simple and modern payment services to anyone with a
-            phone number. With our app, you can spend, send money, pay bills,
-            and receive money with just your phone number.
+          Yeah provides simple and modern payment services to anyone with a phone number. With our app, you can spend, send money, pay bills, and receive money with just your phone number.
           </h2>
         </div>
       </div>
@@ -107,7 +115,8 @@
             <span>⚡</span>
             <div>
               <h4>Fast Setup</h4>
-              <p>Register and begin accepting payments in less than 5 minutes.</p>
+              <p>Register and begin accepting payments in less than 5 minutes.
+              </p>
             </div>
           
           </div>
@@ -132,8 +141,7 @@
             <div>
               <h4>Transparent fees</h4>
               <p>
-                You don’t pay maintenance fee. Only get charged for successful
-                transactions.
+                You don’t pay maintenance fee. Only get charged for successful transactions.
               </p>
             </div>
           </div>
@@ -146,8 +154,7 @@
             <div>
               <h4>Protected data</h4>
               <p>
-                We care about your safety, so your payments and personal info get
-                superior security.
+                We care about your safety, so your payments and personal info get superior security.
               </p>
             </div>
           </div>
@@ -175,8 +182,7 @@
               & Pay
             </h1>
             <p>
-              Scan the service provider or seller’s QR code and enter the amount
-              to pay.
+              Scan the service provider or seller’s QR code and enter the amount to pay.
             </p>
             <br />
             <img src="resources/img/cod.png" class="img-fluid bar-code-img" alt="Responsive image"/>
@@ -195,7 +201,7 @@
       </div>
       <br /><br />
     </section>
-    <section class="cover container-fluid mobile-feat">
+    <section class="cover container-fluid mobile-feat tm-height mb-5">
       <img class="mt-3 lg-head mb-5" src="resources/img/yh.png" alt="" />
       <div id="carouselExampleIndicators" class="row carousel slide feature-cover"
         data-ride="carousel">
@@ -212,41 +218,38 @@
           <div class="col-md-6">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="resources/img/iPhone.png"
-                  class="img-fluid wp-2 iphonepng d-block"
+                <img src="resources/img/airtime.png"
+                  class="img-fluid wp-2 iphonepng d-block w-100"
                   alt="Responsive image"/>
               </div>
               <div class="carousel-item">
-                <img src="resources/img/iPhone.png"
-                  class="img-fluid iphonepng d-block"
+                <img src="resources/img/send.png"
+                  class="img-fluid wp-2 iphonepng d-block w-100"
                   alt="Responsive image"/>
               </div>
               <div class="carousel-item">
-                <img src="resources/img/iPhone.png"
-                  class="img-fluid iphonepng d-block"
+                <img src="resources/img/confirm.png"
+                  class="img-fluid iphonepng d-block w-100"
                   alt="Responsive image"/>
               </div>
             </div>
           </div>
           <div class="col-md-6 pay-slide  wp-3">
-            <div class="dp-for-ft-slider">
-              <div class="">
-                <span class="payment-methods"
-                  >Simple money <br />
-                  transfer</span
-                >
+            <div class="row pay-slide">
+              <div class="col-md-12 mb-5">
+                <img src="resources/img/path1.png"
+                class="img-fluid w-100"
+                alt="Responsive image"/>
               </div>
-              <div>
-                <span class="payment-methods"
-                  >Buy airtime & <br />
-                  mobile data</span
-                >
+              <div class="col-md-12 mb-5">
+                <img src="resources/img/path2.png"
+                class="img-fluid w-100"
+                alt="Responsive image"/>
               </div>
-              <div class="">
-                <span class="payment-methods"
-                  >Pay for local <br />
-                  event tickets</span
-                >
+              <div class="col-md-12 mb-5">
+                <img src="resources/img/path3.png"
+                class="img-fluid w-100"
+                alt="Responsive image"/>
               </div>
             </div>
           </div>
@@ -269,7 +272,7 @@
         <div class="row">
           <div class="col-md-2">
             <div class="row pc-view">
-              <div class="col-md-12 media-mobile">
+              <div class="col-md-12">
                 <a class="some-icons" href="#">
                   <i class="fa fa-facebook text-white"></i></a
                 ><br /><br />
@@ -298,7 +301,7 @@
             </div>
             <button
           type="button"
-          class="join-btn-mob btn "
+          class="join-btn-mob join-btn-foot btn "
           data-toggle="modal"
           data-target="#exampleModal"
           data-whatever="@mdo"

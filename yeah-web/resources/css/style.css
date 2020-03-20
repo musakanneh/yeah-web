@@ -57,14 +57,35 @@ nav a {
 }
 
 .pay-slide {
-  padding-top: 15%;
-  padding-left: 5%;
+  padding-top: 1%;
+  padding-left: 3%;
+}
+.tm-height {
+  height: 100vh auto !important;
+}
+
+/* video background */
+#bg-video {
+  object-fit: cover;
+  width: 100% !important;
+  height: 85% !important;
+  top: 0;
+  left: 0;
+  object-position: center;
+}
+video{
+  /* border: 2px solid #e5e5e5; */
+  border-radius: 15px;
+}
+/* about us */
+.about-us-cover {
+  height: auto;
 }
 
 .heading {
   background-color: #0a1ed1;
-  padding-top: 1%;
-  height: 100%;
+  padding-top: 1% !important;
+  height: 100% !important;
 }
 
 .form-control {
@@ -96,25 +117,34 @@ nav a {
   border-radius: 0;
   position: absolute;
   font-size: 30px;
+  padding: 1% 2%;
+  margin-top: 40% !important;
+  margin-left: 0.5%;
+  color: #e5e5e5;
+  background-color: transparent;
+  border: 2px solid #e5e5e5;
+}
+.mobile-sm-styles {
+  display: none;
+}
+.join-btn-foot {
+  border-radius: 0;
+  position: absolute;
+  font-size: 30px;
   border: 1px solid red;
   padding: 1% 2%;
-  margin-top: 36%;
   margin-left: 0.5%;
   color: #e5e5e5;
   background-color: transparent;
   border: 1px solid #e5e5e5;
 }
-
-.join-btn-footer {
-  border-radius: 0;
-  position: absolute;
-  font-size: 30px;
+.join-btn-foot:hover {
+  color: #0846e2;
+  transition: 1s ease;
   padding: 1% 2%;
-  color: #e5e5e5;
-  background-color: transparent;
-  border: 1px solid #e5e5e5;
+  border-radius: 0;
+  background-color: #e5e5e5;
 }
-
 .join-btn:hover {
   color: #0846e2;
   transition: 1s ease;
@@ -127,7 +157,9 @@ nav a {
   width: 100%;
   margin-top: 4%;
 }
-
+.overview-image {
+  width: 100%;
+}
 .cover {
   max-width: 100%;
   padding: 0 1%;
@@ -162,13 +194,14 @@ nav a {
 }
 
 .tm-about {
-  width: 70%;
+  width: 90%;
+  margin-top: 8%;
   height: 440px;
   color: #151515;
   text-align: center;
   font-family: "IBM Plex Sans";
   font-size: 50px;
-  font-weight: 380;
+  font-weight: 300;
   line-height: 60px;
 }
 
