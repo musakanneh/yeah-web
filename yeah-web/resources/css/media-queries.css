@@ -1,9 +1,10 @@
 @media only screen and (max-width: 375px) {
   .join-btn {
-    margin-top: 90% !important;
+    margin-top: auto !important;
     padding: 3% 0;
-    width: 100%;
+    /* width: 100%; */
     font-size: 18px !important;
+    /* border: 1px solid red; */
     background-color: #e5e5e5;
     color: #0a1ed1;
   }
@@ -19,6 +20,10 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .overview-image{
+    width: 90%;
+    margin-left: -3%;
+  }
   .feat-elements {
     width: 100%;
     display: flex;
@@ -58,8 +63,12 @@
     font-size: 22px;
     margin-top: 2%;
   }
+  hr{
+    margin-top: 20%;
+  }
   .join-btn-mob {
     width: 50%;
+    margin-left:20%;
     font-size: 20px !important;
     background-color: #e5e5e5;
     color: #0a1ed1;
@@ -92,7 +101,7 @@
     width: 100%;
   }
   .heading {
-    height: 80vh;
+    height: 90vh !important;
   }
   .tm-payment p {
     font-size: 15px !important;
@@ -114,7 +123,7 @@
     padding-top: 15%;
   }
   .join-btn {
-    margin-top: 100% !important;
+    margin-top: 95% !important;
     padding: 3% 0;
     width: 50%;
     margin-left: 22% !important;
