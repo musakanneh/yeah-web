@@ -12,7 +12,6 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="stylesheet" href="resources/css/media-queries.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Yeah Pay</title>
   </head>
   <body>
@@ -31,9 +30,10 @@
         </div>
       </nav>
       <div class="row cover">
-       
         <div class="col-md-8 tm-payment">
-          <h1> Payments <br /> made <span class="type"></span></h1>
+          <h1>Payments <br> Made 
+           <span class="typer" id="main" data-words="Easier‌,Quicker,Simpler" data-delay="100" data-deleteDelay="1000"></span>
+          </h1>
           <p>All you need is a phone number.</p>
         </div>
         <div class="col-md-4 mobile-phone">
@@ -42,7 +42,6 @@
         <source class="header-image" src="resources/img/yeah-patrick.mp4" type="video/mp4" />
       </video>
         </div>
-        
         <button
           type="button" class="join-btn btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
           Join waitlist 👍🏾
@@ -59,7 +58,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form method="post" id="formSample" action="#">
+                <form method="post" id="formSample" action="http://api.theyeah.io/api/v1/waiting_list_post">
                   <div class="form-group">
                        <input type="text" name="name" id="name" placeholder="Full Name">
                   </div>
@@ -67,7 +66,7 @@
                        <input type="email" id="phone" name="email" placeholder="Email">
                   </div>
                   <div class="form-group">
-                    <input  id="number" name="number" placeholder="Number">
+                    <input  id="phone_number" name="phone_number" placeholder="Phone Number">
                </div>
                <button id="buttonClick" type="submit" class="btn btn-primary mb-2">Join Now 👍🏾</button>
                 </form>
@@ -382,7 +381,8 @@
     <br />
   </div>
 </footer>
-<script src="resources/js/typed.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

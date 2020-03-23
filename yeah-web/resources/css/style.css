@@ -112,7 +112,9 @@ video {
 .lg-head {
   width: 8%;
 }
-
+#main{
+  color: #e5e5e5 !important;
+}
 .join-btn {
   border-radius: 0;
   position: absolute;
