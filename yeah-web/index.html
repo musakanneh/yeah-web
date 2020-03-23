@@ -6,14 +6,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="web-resources/normalize.css" />
     <link rel="stylesheet" href="web-resources/fluid-grid.css" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="web-resources/animate.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,300,400,400i,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="stylesheet" href="resources/css/media-queries.css" />
-    <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Yeah Pay</title>
   </head>
@@ -35,11 +33,10 @@
       <div class="row cover">
        
         <div class="col-md-8 tm-payment">
-          <h1> Payments <br />made simpler</h1>
+          <h1> Payments <br /> made <span class="type"></span></h1>
           <p>All you need is a phone number.</p>
         </div>
         <div class="col-md-4 mobile-phone">
-          <!-- <img src="resources/img/iPhone.png" class="header-image img-fluid wp-2" alt="Responsive image"/> -->
            <video
         class="cover" id="bg-video" autoplay loop muted playsinline preload="none">
         <source class="header-image" src="resources/img/yeah-patrick.mp4" type="video/mp4" />
@@ -62,19 +59,17 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form method="post" id="formSample" action="">
+                <form method="post" id="formSample" action="#">
                   <div class="form-group">
-                       <input type="text" name="name" id="name" placeholder="Fullname">
+                       <input type="text" name="name" id="name" placeholder="Full Name">
                   </div>
                   <div class="form-group">
-                       <input type="email" id="phone" name="email" placeholder="email">
+                       <input type="email" id="phone" name="email" placeholder="Email">
                   </div>
                   <div class="form-group">
-                    <input type="number" id="phone" name="phone" placeholder="number">
+                    <input  id="number" name="number" placeholder="Number">
                </div>
-                  <div id="buttonClick">
-                  <button
-                  class="btn btn-primary" >Submit</button></div>
+               <button id="buttonClick" type="submit" class="btn btn-primary mb-2">Join Now 👍🏾</button>
                 </form>
               </div>
               <div class="modal-footer">
@@ -234,21 +229,21 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 pay-slide  wp-3">
+          <div class="col-md-6 pay-slide mt-5  wp-3">
             <div class="row pay-slide">
               <div class="col-md-12 mb-5">
                 <img src="resources/img/path1.png"
-                class="img-fluid w-100"
+                class="img-fluid w-55"
                 alt="Responsive image"/>
               </div>
               <div class="col-md-12 mb-5">
                 <img src="resources/img/path2.png"
-                class="img-fluid w-100"
+                class="img-fluid w-55"
                 alt="Responsive image"/>
               </div>
               <div class="col-md-12 mb-5">
                 <img src="resources/img/path3.png"
-                class="img-fluid w-100"
+                class="img-fluid w-55"
                 alt="Responsive image"/>
               </div>
             </div>
@@ -260,13 +255,13 @@
       <div class="cover pt-5">
         <div class="row mobile-sm-styles">
           <div class="col">
-            <a class="" href="#"> <i class="fab fa-facebook-f"></i></a>
+            <a class="" href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour"> <i class="fab fa-facebook"></i></a>
           </div>
           <div class="col">
-            <a class="" href="#"> <i class="fa fa-instagram text-white"></i></a>
-          </div>
+            <a class="" href="#"> <i class="fab fa-instagram text-white"></i></a>
+          </div>  
           <div class="col">
-            <a class="" href="#"> <i class="fa fa-twitter text-white"></i></a>
+            <a class="" href="#"> <i class="fab fa-twitter text-white"></i></a>
           </div>
         </div>
         <div class="row">
@@ -274,13 +269,13 @@
             <div class="row pc-view">
               <div class="col-md-12">
                 <a class="some-icons" href="#">
-                  <i class="fa fa-facebook text-white"></i></a
+                  <i class="fab fa-facebook text-white"></i></a
                 ><br /><br />
                 <a class="some-icons" href="#">
-                  <i class="fa fa-instagram text-white"></i></a
+                  <i class="fab fa-instagram text-white"></i></a
                 ><br /><br />
                 <a class="some-icons" href="#">
-                  <i class="fa fa-twitter text-white"></i></a
+                  <i class="fab fa-twitter text-white"></i></a
                 ><br /><br />
               </div>
             </div>
@@ -334,15 +329,7 @@
               <div class="modal-body">
                 <form>
                   <div class="form-group">
-                    <select
-                      id="inputState"
-                      class="form-control"
-                      method="Post"
-                      action=""
-                    >
-                      <option selected>Choose...</option>
-                      <option>+231</option>
-                    </select>
+                  
                   </div>
                   <div class="form-group">
                     <input
@@ -395,6 +382,7 @@
     <br />
   </div>
 </footer>
+<script src="resources/js/typed.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

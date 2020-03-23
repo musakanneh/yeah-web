@@ -1,26 +1,14 @@
 @media only screen and (max-width: 375px) {
-  .join-btn {
-    margin-top: auto !important;
-    padding: 3% 0;
-    /* width: 100%; */
-    font-size: 18px !important;
-    /* border: 1px solid red; */
-    background-color: #e5e5e5;
-    color: #0a1ed1;
-  }
-  .heading {
-    height: 100% auto !important;
-  }
   .tm-payment h1 {
     font-size: 55px !important;
-    width: 100%;
+    width: 15% !important;
     padding-left: 1%;
     padding-top: 10%;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .overview-image{
+  .overview-image {
     width: 90%;
     margin-left: -3%;
   }
@@ -63,12 +51,12 @@
     font-size: 22px;
     margin-top: 2%;
   }
-  hr{
+  hr {
     margin-top: 20%;
   }
   .join-btn-mob {
     width: 50%;
-    margin-left:20%;
+    margin-left: 20%;
     font-size: 20px !important;
     background-color: #e5e5e5;
     color: #0a1ed1;
@@ -122,15 +110,6 @@
     padding-left: 1%;
     padding-top: 15%;
   }
-  .join-btn {
-    margin-top: 95% !important;
-    padding: 3% 0;
-    width: 50%;
-    margin-left: 22% !important;
-    font-size: 18px !important;
-    background-color: #e5e5e5;
-    color: #0a1ed1;
-  }
   .navbar-toggler-icon {
     color: #e5e5e5;
     padding: 0;
@@ -159,7 +138,35 @@
 }
 
 /* ipods */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 16px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+    line-height: 40px !important;
+    margin: 0;
+    padding: 0;
+  }
+  .tm-payment h1 {
+    font-size: 55px !important;
+    width: 20%;
+    padding-left: 1%;
+    padding-top: 15%;
+  }
+  h1 {
+    font-size: 110px !important;
+  }
+  .type {
+    margin: 0;
+    line-height: 20px !important;
+    font-size: 55px !important;
+  }
+  .join-btn {
+    border-radius: 0 !important;
+    font-size: 16px !important;
+    margin: auto !important;
+  }
 }
 
 /* small to big tablets */
@@ -167,12 +174,19 @@
   .tm-payment h1 {
     font-size: 50px;
   }
+  .heading {
+    height: auto !important;
+  }
   .join-btn {
+    position: relative;
+    margin-top: -10% !important;
+    margin-bottom: 10% !important;
     margin-left: 1%;
     border-radius: 10px;
   }
   .tm-payment p {
     font-size: 20px;
+    margin-bottom: 10% !important;
   }
   .scan-to-pay p {
     margin-top: -11%;
@@ -199,28 +213,3 @@
     text-align: center;
   }
 }
-
-/* video */
-/* @media (min-aspect-ratio: 16/9) {
-  #bg-video {
-    width: 100%;
-    height: auto;
-  }
-} */
-/* 
-@media (max-aspect-ratio: 16/9) {
-  #bg-video {
-    width: auto;
-    height: 50%;
-  }
-} */
-
-/* @media (max-width: 767px) {
-  #bg-video {
-    display: none;
-  }
-  .heading {
-    background: url("poster.jpg"); 
-    background-size: cover; 
-  }
-} */

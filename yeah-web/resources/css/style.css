@@ -57,7 +57,7 @@ nav a {
 }
 
 .pay-slide {
-  padding-top: 1%;
+  cursor: pointer;
   padding-left: 3%;
 }
 .tm-height {
@@ -73,7 +73,7 @@ nav a {
   left: 0;
   object-position: center;
 }
-video{
+video {
   /* border: 2px solid #e5e5e5; */
   border-radius: 15px;
 }
@@ -118,6 +118,7 @@ video{
   position: absolute;
   font-size: 30px;
   padding: 1% 2%;
+  border: 1px solid red;
   margin-top: 40% !important;
   margin-left: 0.5%;
   color: #e5e5e5;
@@ -131,7 +132,6 @@ video{
   border-radius: 0;
   position: absolute;
   font-size: 30px;
-  border: 1px solid red;
   padding: 1% 2%;
   margin-left: 0.5%;
   color: #e5e5e5;
@@ -164,6 +164,15 @@ video{
   max-width: 100%;
   padding: 0 1%;
   margin: 0 auto;
+}
+
+.tm-payment span {
+  margin-left: 2%;
+  font-size: 105px;
+  font-weight: 700;
+}
+.tm-payment-mob {
+  display: none;
 }
 
 .tm-payment {
