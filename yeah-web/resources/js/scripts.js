@@ -43,6 +43,7 @@ $(document).ready(function() {
 });
 
 
+ // API Post request
 var form = new FormData();
 form.append("name ", "KannehMusa");
 form.append("email", "kannemusa@yeah.io");
