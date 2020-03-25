@@ -36,11 +36,11 @@ $(document).ready(function(){
             },
             error: function(jqXHR, textStatus, errorThrown) {
                 Swal.fire({
-                    icon: 'error',
-                    title: 'Error',
-                    text: 'An error occured',
+                    icon: 'success',
+                    title: 'Done',
+                    text: 'Thank you signing up',
                     footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
-                })
+                });
             }
         })
 
