@@ -2,49 +2,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "IBM Plex Sans", sans-serif !important;
+  /* font-family: "IBM Plex Sans", sans-serif !important; */
   text-rendering: optimizeLegibility;
 }
 
 .form-group input {
   padding: 2%;
-  border: 1px solid #005fb2;
+  border: 1px solid #005fb257;
   width: 100%;
 }
-/* animation */
+
+/* ===========================
+ * Animation styling
+ * ===========================*/
 .wp-1 {
   opacity: 0;
 }
+
 .wp-1 .animated {
   opacity: 1;
   animation-duration: 2s ease;
 }
 
+/* ===========================
+ * Navbar styling
+ * ===========================*/
 nav {
   z-index: 1;
+  padding: 1% 2% !important;
   width: 100%;
 }
 
 nav a {
   color: #e5e5e5;
   font-weight: 500;
-}
-.sticky-bar-start {
-  transition: 1s ease;
-  top: 0;
-  left: 0;
-  width: 100%;
-  box-shadow: 0 2px 2px #e5e5e5;
-  background-color: #151515;
-}
-/* sticky nav */
-.sticky {
-  position: fixed;
-  transition: 1.2s ease;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #0a1ed1;
 }
 
 .sticky nav a {
@@ -60,48 +51,49 @@ nav a {
   cursor: pointer;
   padding-left: 3%;
 }
-.tm-height {
-  height: 100vh auto !important;
-}
 
-/* video background */
-#bg-video {
-  object-fit: cover;
-  width: 100% !important;
-  height: 85% !important;
-  top: 0;
+/* ==========================
+ * Video background 
+ * ==========================*/
+.bg-video {
   left: 0;
-  object-position: center;
+  top: 0;
+  margin-top: 0% !important;
+  position: relative;
+  min-width: auto !important;
+  max-width: 25% !important;
+  min-height: auto !important;
+  max-height: 25% !important;
 }
 video {
-  /* border: 2px solid #e5e5e5; */
-  border-radius: 15px;
-}
-/* about us */
-.about-us-cover {
-  height: auto;
+  margin-top: 10% !important;
 }
 
-.heading {
+header {
   background-color: #0a1ed1;
-  padding-top: 1% !important;
-  height: 100% !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  /* border: 1px solid red; */
+  height: auto !important;
 }
 
 .form-control {
   border-radius: 0;
+  font-family: "IBM Plex Sans", sans-serif !important;
   border: 1px solid #005fb2;
 }
 
+/* ==================================
+* Buttons for the Wishlist form 
+=====================================*/
 .send-message-btn {
   font-family: "IBM Plex Sans", sans-serif !important;
   background-color: #0846e2;
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 
 .back-btn {
   font-family: "IBM Plex Sans", sans-serif !important;
-  border-radius: 0;
+  border-radius: 0 !important;
   background-color: #151515;
 }
 
@@ -112,20 +104,30 @@ video {
 .lg-head {
   width: 8%;
 }
-#main{
+
+#main {
   color: #e5e5e5 !important;
+  margin-left: -1% !important;
+  position: relative;
 }
+
+/* ====================
+ * Button Styles
+ ======================*/
 .join-btn {
   border-radius: 0;
   position: absolute;
-  font-size: 30px;
-  padding: 1% 2%;
-  border: 1px solid red;
-  margin-top: 40% !important;
-  margin-left: 0.5%;
+  margin-left: 2% !important;
+  margin-top: 34% !important;
+  font-size: 30px !important;
   color: #e5e5e5;
   background-color: transparent;
   border: 2px solid #e5e5e5;
+}
+.join-btn:hover {
+  color: #0846e2;
+  background-color: #e5e5e5;
+  transition: 1s ease;
 }
 .mobile-sm-styles {
   display: none;
@@ -133,12 +135,11 @@ video {
 .join-btn-foot {
   border-radius: 0;
   position: absolute;
-  font-size: 30px;
-  padding: 1% 2%;
-  margin-left: 0.5%;
+  margin-left: 2% !important;
+  font-size: 25px !important;
   color: #e5e5e5;
   background-color: transparent;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
 }
 .join-btn-foot:hover {
   color: #0846e2;
@@ -147,100 +148,97 @@ video {
   border-radius: 0;
   background-color: #e5e5e5;
 }
-.join-btn:hover {
-  color: #0846e2;
-  transition: 1s ease;
-  padding: 1% 2%;
-  border-radius: 0;
-  background-color: #e5e5e5;
-}
 
-.header-image {
-  width: 100%;
-  margin-top: 4%;
-}
 .overview-image {
   width: 100%;
 }
 .cover {
   max-width: 100%;
-  padding: 0 1%;
   margin: 0 auto;
 }
 
+/* ==================================
+* Payment section
+=====================================*/
 .tm-payment span {
   margin-left: 2%;
-  font-size: 105px;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-size: 100px !important;
   font-weight: 700;
 }
+
 .tm-payment-mob {
   display: none;
 }
 
 .tm-payment {
-  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  margin-bottom: 20% !important;
+  width: auto !important;
+  font-weight: normal;
+  height: auto !important;
   color: #e5e5e5;
-  font-family: "IBM Plex Sans";
-  letter-spacing: 1.57px;
 }
+
 .tm-payment p {
-  margin-left: -1%;
-  margin-top: 1%;
+  margin-left: 1%;
+  font-family: "IBM Plex Sans", sans-serif !important;
   color: #e5e5e5;
-  font-family: "IBM Plex Sans";
-  font-size: 38px;
+  font-size: 30px !important;
   font-weight: 400;
-  line-height: 59px;
 }
 
 .tm-payment h1 {
-  height: 356px;
-  margin-left: -2%;
+  margin-left: auto !important;
   color: #e5e5e5;
-  font-family: "IBM Plex Sans";
-  font-size: 105px;
+  font-size: 100px !important;
   font-weight: 700;
+  font-family: "IBM Plex Sans", sans-serif !important;
   padding-top: 10%;
+  line-height: 120px !important;
   letter-spacing: 1px;
 }
 
+/* ==================================
+* About Us Section
+=====================================*/
+/* about us */
+.about-us-cover {
+  height: auto !important;
+}
+
 .tm-about {
-  width: 90%;
-  margin-top: 8%;
-  height: 440px;
+  margin-top: 5% !important;
+  width: 80%;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  height: 430px;
   color: #151515;
   text-align: center;
-  font-family: "IBM Plex Sans";
-  font-size: 50px;
+  font-size: 45px !important;
   font-weight: 300;
   line-height: 60px;
 }
 
 .some-icons {
   padding: 10px;
+  font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 25px;
   width: 100%;
   border-radius: 15px;
+}
+.icon-color:hover {
+  color: #0a1ed1;
+  transition: 1s ease;
 }
 
 .slide-sec-one img {
   width: 100%;
 }
-/* ------------------------------------
-* About Us Sec Styling
--------------------------------------*/
+
 .coin-vid {
   width: 50%;
   margin-left: 20%;
   margin-bottom: -100%;
-}
-
-.about-us {
-  font-size: 40px;
-  width: 90%;
-  margin-left: 5%;
-  text-align: center;
-  color: black;
 }
 
 .mobile-for-ft-slider {
@@ -280,11 +278,13 @@ span {
 .scan-to-pay img {
   width: 40%;
   margin-left: 30%;
+  margin-bottom: 5% !important;
 }
 .scan-to-pay h1 {
   width: 100%;
   text-align: center;
   height: 390px;
+  font-family: "IBM Plex Sans", sans-serif !important;
   color: #e5e5e5;
   font-size: 150px;
   font-weight: 700;
@@ -294,6 +294,7 @@ span {
 .scan-to-pay p {
   width: 100%;
   height: 30px;
+  font-family: "IBM Plex Sans", sans-serif !important;
   color: #e5e5e5;
   font-size: 18px;
   font-weight: 500;
@@ -330,7 +331,7 @@ span {
 
 #waitlist h4 {
   color: #e5e5e5;
-  font-family: "IBM Plex Sans";
+  /* font-family: "IBM Plex Sans"; */
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.31px;
@@ -341,11 +342,11 @@ hr {
   opacity: 0.503;
   color: #e5e5e5;
 }
-.header-img {
+/* .header-img {
   width: 60%;
   margin-left: 40%;
   cursor: pointer;
-}
+} */
 /* ---------------------------------
  * Media queries styling 
  -----------------------------------*/

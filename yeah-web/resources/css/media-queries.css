@@ -1,223 +1,203 @@
 @media only screen and (max-width: 375px) {
-  .tm-payment h1 {
-    font-size: 55px !important;
-    width: 15% !important;
-    padding-left: 1%;
-    padding-top: 10%;
+  #logo {
+    width: 60% !important;
+    margin-left: 40% !important;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  .overview-image {
-    width: 90%;
-    margin-left: -3%;
+  #feaure-row-div {
+    padding: 0 !important;
+    margin: 0 !important;
   }
+
+  .tm-about {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    font-family: "IBM Plex Sans", sans-serif !important;
+    margin-bottom: 12% !important;
+    line-height: 35px !important;
+    font-size: 18px !important;
+  }
+
+  /* feature section */
   .feat-elements {
-    width: 100%;
     display: flex;
+    margin-top: 10% !important;
   }
-  .feat-elements p {
-    font-size: 14px;
-    margin-top: -7%;
-    width: 90%;
-    margin-left: 5%;
-    height: auto;
-    font-weight: normal;
+
+  .feat-elements span {
+    font-size: 22px !important;
+    padding-top: 1%;
   }
+
   .feat-elements h4 {
-    width: 90%;
-    font-size: 16px !important;
-    color: #151515;
-    margin-left: 5%;
+    margin-left: 2%;
   }
-  #logo {
-    margin-left: 30%;
-    margin-top: -15%;
-    width: 70%;
+
+  .feat-elements p {
+    margin-left: 2%;
+    margin-top: -5% !important;
+    height: auto !important;
+  }
+
+  .features-row {
+    position: relative;
+    margin: 0 auto !important;
   }
   .pay-slide {
     display: none;
   }
-  .tm-about {
-    width: 96%;
-    line-height: 30px;
-    font-size: 20px !important;
-    height: auto;
-    margin: 0rem;
-    font-size: 45px;
+  /* scan to pay */
+  .scan-to-pay h1 {
+    line-height: 80px !important;
+    font-family: "IBM Plex Sans", sans-serif !important;
+    font-size: 80px !important;
   }
-  .tm-payment p {
-    text-align: center;
-    font-size: 22px;
-    margin-top: 2%;
-  }
-  hr {
-    margin-top: 20%;
-  }
-  .join-btn-mob {
-    width: 50%;
-    margin-left: 20%;
-    font-size: 20px !important;
-    background-color: #e5e5e5;
-    color: #0a1ed1;
-  }
+
   .coin-vid {
+    width: 22%;
+  }
+
+  .join-btn {
+    text-align: center;
+    margin: 2rem !important;
+  }
+
+  .bg-video {
     display: none;
   }
-  .scan-to-pay h1 {
-    font-size: 100px !important;
-    line-height: 150px;
+
+  .tm-payment p {
+    margin-bottom: 20% !important;
+    font-size: auto !important;
   }
-  .sec h4 {
-    color: #0a1ed1;
-    font-size: 20px !important;
+
+  .lg-head {
+    width: 15% !important;
+  }
+
+  .overview-image {
+    padding-right: 12% !important;
   }
   .pc-view {
     display: none;
   }
-  .sec {
-    margin: 1%;
-    background-color: #151515;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .features-row {
+  .mobile-sm-styles {
     display: block;
-    margin-top: 10%;
-  }
-  .feat-elements {
-    width: 100%;
-  }
-  .heading {
-    height: 90vh !important;
-  }
-  .tm-payment p {
-    font-size: 15px !important;
-    margin-top: 1%;
-    text-align: left;
-  }
-  .mobile-phone {
-    display: block;
-    position: absolute;
-    width: 60%;
-    margin-left: 10%;
-    display: none;
-    margin-top: 40%;
-  }
-  .tm-payment h1 {
-    font-size: 55px !important;
-    width: 100%;
-    padding-left: 1%;
-    padding-top: 15%;
-  }
-  .navbar-toggler-icon {
-    color: #e5e5e5;
-    padding: 0;
-    margin-left: -70%;
-  }
-  .scan-to-pay p {
-    margin-top: -15%;
-    width: 50%;
-    font-size: 16px !important;
+    font-size: 25px !important;
+    display: flex;
+    font-family: "IBM Plex Sans", sans-serif !important;
     text-align: center;
+    margin-bottom: 5% !important;
   }
-  .scan-to-pay h1 {
-    font-size: 100px;
-    margin-bottom: 15%;
-    line-height: 0;
-    position: relative;
-    line-height: 100px !important;
-    height: auto;
-  }
+
+  /* footer */
   #future-of-payment {
-    margin-top: 5%;
-    font-weight: 400;
-    font-size: 40px !important;
-    height: auto;
+    text-align: center;
+    margin: 1rem !important;
+    font-size: 32px !important;
+    height: auto !important;
+  }
+  #waitlist h4 {
+    text-align: center;
+    font-weight: normal;
+    margin-left: 4% !important;
   }
 }
 
 /* ipods */
 @media only screen and (max-width: 768px) {
-  p {
-    font-size: 16px !important;
-    position: relative;
-    margin-top: 25% !important;
+  .navbar-toggler-icon {
+    font-weight: normal;
+    margin-top: 10% !important;
+    color: white;
+    margin-left: -70% !important;
   }
-  h2 {
-    font-size: 30px !important;
-    line-height: 40px !important;
-    margin: 0;
-    padding: 0;
-  }
-  .tm-payment h1 {
-    font-size: 55px !important;
-    width: 20%;
-    padding-left: 1%;
-    padding-top: 15%;
-  }
-  #main {
-    color: #e5e5e5 !important;
-    position: absolute;
-    margin-top: 8% !important;
-  }
-  h1 {
-    font-size: 110px !important;
-  }
-  .typer {
-    margin-left: -1% !important;
-    color: #e5e5e5;
-    line-height: 20px !important;
-    font-size: 55px !important;
-  }
-  .join-btn {
-    border-radius: 0 !important;
-    font-size: 20px !important;
-    margin: auto !important;
-  }
-}
 
-/* small to big tablets */
-@media only screen and (max-width: 1023px) {
-  .tm-payment h1 {
-    font-size: 50px;
+  #logo {
+    margin-top: -10% !important;
+    margin-left: 10%;
   }
-  .heading {
+
+  header {
     height: auto !important;
   }
+
+  .tm-payment p {
+    margin-bottom: -20% !important;
+    font-size: 20px !important;
+    width: 100% !important;
+  }
+
+  .tm-payment h1 {
+    padding-top: 10% !important;
+    font-size: 40px !important;
+    line-height: 60px !important;
+  }
+
+  .tm-payment h1 span {
+    font-size: 40px !important;
+  }
+
   .join-btn {
     position: relative;
+    font-size: 20px !important;
+    margin-left: 28% !important;
+  }
+  .join-btn-foot {
+    position: relative;
+    font-size: 20px !important;
+    margin-left: 28% !important;
+  }
+
+  .tm-about {
+    margin-bottom: 0;
+
+    line-height: 35px !important;
+    font-size: 20px !important;
+  }
+
+  #feaure-row-div {
     margin-top: -10% !important;
-    margin-bottom: 10% !important;
-    margin-left: 1%;
-    border-radius: 10px;
+    padding: 0% 1%;
   }
-  .tm-payment p {
-    font-size: 20px;
-    margin-bottom: 10% !important;
+
+  h4 {
+    font-size: 16px !important;
   }
+
+  p {
+    font-size: 14px !important;
+  }
+
   .scan-to-pay p {
-    margin-top: -11%;
-    width: 100%;
-    margin-bottom: 5%;
+    margin-top: 5%;
     text-align: center;
   }
   .scan-to-pay h1 {
-    font-size: 150px;
-    line-height: 150px;
+    font-size: 100px;
+    height: auto !important;
+    line-height: 100px;
   }
-}
 
-/* ipods and all */
-@media only screen and (max-width: 1140px) {
-  .tm-payment h1 {
-    font-size: 90px;
-    height: auto;
+  .scan-to-pay img {
+    margin-bottom: 8% !important;
   }
-  .scan-to-pay p {
-    margin-top: -10%;
-    width: 100%;
-    margin-bottom: 5%;
-    text-align: center;
+
+  .pay-slide {
+    margin-top: 1% !important;
+    width: 95% !important;
+  }
+
+  #future-of-payment {
+    font-size: 50px;
+    height: auto !important;
+  }
+
+  #trade-mark p {
+    font-size: 12px !important;
   }
 }

@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="stylesheet" href="resources/css/media-queries.css" />
     <title>Yeah Pay</title>
+    <link rel="shrotcut icon" type="image/png" href="resources/img/favicon.jpeg">
   </head>
+
+
   <body>
-    <header class="heading">
+    <header class="container-fluid">
       <nav class="container-fluid navbar navbar-expand-lg">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-bar">
           <span class="navbar-toggler-icon">&#9776;</span></button>
@@ -29,30 +32,29 @@
           </ul>
         </div>
       </nav>
-      <div class="row cover">
-        <div class="col-md-8 tm-payment">
+
+      <div class="row container-fluid">
+        <div class="col-md-9 tm-payment">
           <h1>Payments <br> Made 
            <span class="typer" id="main" data-words="Easier‌,Quicker,Simpler" data-delay="100" data-deleteDelay="1000"></span>
           </h1>
-          <p>All you need is a phone number.</p>
+          <div>
+            <p>All you need is a phone number.</p>
+          </div>
         </div>
-        <div class="col-md-4 mobile-phone">
-           <video
-        class="cover" id="bg-video" autoplay loop muted playsinline preload="none">
-        <source class="header-image" src="resources/img/yeah-patrick.mp4" type="video/mp4" />
-      </video>
-        </div>
+        <video class="embed-responsive-item col-md-3 bg-video mobile-phone" src="resources/img/yeah-patrick.mp4" autoplay loop muted playsinline preload="none"></video>
         <button
           type="button" class="join-btn btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
           Join waitlist 👍🏾
         </button>
+
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
+                <p class="modal-title" id="exampleModalLabel">
                   Add me to the early access waitlist 👍🏾
-                </h5>
+                </p>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -84,6 +86,9 @@
         </div>
       </div>
     </header>
+
+
+
     <section class="container-fluid" id="sticky-nav-start">
       <img class="mt-3 lg-head mb-5" src="resources/img/yh.png" alt="" />
       <div class="row about-us-cover">
@@ -99,7 +104,9 @@
           </h2>
         </div>
       </div>
-      <section class="row cover features-row dimension">
+
+
+      <section class="row container-fluid features-row">
         <div class="col-md-3 col-sm-12" id="feaure-row-div">
           <div
             class="feat-elements wow fadeInUp"
@@ -112,9 +119,9 @@
               <p>Register and begin accepting payments in less than 5 minutes.
               </p>
             </div>
-          
           </div>
         </div>
+
         <div class="col-md-3" id="feaure-row-div">
           <div
             class="feat-elements wow fadeInUp"
@@ -128,6 +135,7 @@
           </div>
           </div>
         </div>
+
         <div class="col-md-3" id="feaure-row-div">
           <div
             class="feat-elements wow fadeInUp" data-wow-delay="2s" data-wow-duration="1s">
@@ -140,6 +148,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-md-3" id="feaure-row-div">
           <div
             class="feat-elements wow fadeInUp"
@@ -155,6 +164,9 @@
         </div>
       </section>
   </section>
+
+
+
     <section class="container-fluid mt-5 dimension" id="bar-code-sec" id="sticky-bar-start">
       <img class="mt-3 lg-head" src="resources/img/logo-main.png" alt="" />
       <div class="row">
@@ -193,8 +205,10 @@
           </div>
         </div>
       </div>
-      <br /><br />
     </section>
+
+
+
     <section class="cover container-fluid mobile-feat tm-height mb-5">
       <img class="mt-3 lg-head mb-5" src="resources/img/yh.png" alt="" />
       <div id="carouselExampleIndicators" class="row carousel slide feature-cover"
@@ -250,31 +264,39 @@
         </section>
       </div>
     </section>
+
+
+
     <footer class="container-fluid" id="footer">
       <div class="cover pt-5">
         <div class="row mobile-sm-styles">
           <div class="col">
-            <a class="" href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour"> <i class="fab fa-facebook"></i></a>
+            <a class="" href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour"> 
+              <i class="fa fa-facebook text-white"></i></a>
           </div>
           <div class="col">
-            <a class="" href="#"> <i class="fab fa-instagram text-white"></i></a>
+            <a href="https://www.instagram.com/theyeahgen/?hl=en"> 
+              <i class="fa fa-instagram text-white icon-color"></i></a>
           </div>  
           <div class="col">
-            <a class="" href="#"> <i class="fab fa-twitter text-white"></i></a>
+            <a href="https://twitter.com/YeahGeneration"> <i class="fa fa-twitter text-white"></i></a>
+          </div>
+          <div class="col">
+            <a href="#"> <i class="fa fa-linkedin text-white"></i></a>
           </div>
         </div>
         <div class="row">
           <div class="col-md-2">
             <div class="row pc-view">
               <div class="col-md-12">
-                <a class="some-icons" href="#">
-                  <i class="fab fa-facebook text-white"></i></a
+                <a class="some-icons" href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour">
+                  <i class="fa fa-facebook text-white"></i></a
                 ><br /><br />
-                <a class="some-icons" href="#">
-                  <i class="fab fa-instagram text-white"></i></a
+                <a class="some-icons" href="https://www.instagram.com/theyeahgen/?hl=en">
+                  <i class="fa fa-instagram text-white"></i></a
                 ><br /><br />
-                <a class="some-icons" href="#">
-                  <i class="fab fa-twitter text-white"></i></a
+                <a class="some-icons" href="https://twitter.com/YeahGeneration">
+                  <i class="fa fa-twitter text-white"></i></a
                 ><br /><br />
               </div>
             </div>
@@ -295,77 +317,44 @@
             </div>
             <button
           type="button"
-          class="join-btn-mob join-btn-foot btn "
+          class="join-btn-foot btn "
           data-toggle="modal"
           data-target="#exampleModal"
           data-whatever="@mdo"
         >
           Join waitlist 👍🏾
         </button>
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">
                   Add me to the early access waitlist 👍🏾
                 </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
               <div class="modal-body">
-                <form>
+                <form method="post" id="formSample" action="http://api.theyeah.io/api/v1/waiting_list_post">
                   <div class="form-group">
-                  
+                       <input type="text" name="name" id="name" placeholder="Full Name">
                   </div>
                   <div class="form-group">
-                    <input
-                      value="Name"
-                      type="text"
-                      class="form-control"
-                      id="full-name"
-                    />
+                       <input type="email" id="phone" name="email" placeholder="Email">
                   </div>
                   <div class="form-group">
-                    <input
-                      value="Name"
-                      type="text"
-                      class="form-control"
-                      id="full-name"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      value="Email"
-                      type="text"
-                      class="form-control"
-                      id="full-name"
-                    />
-                  </div>
+                    <input  id="phone_number" name="phone_number" placeholder="Phone Number">
+               </div>
+               <button id="buttonClick" type="submit" class="btn btn-primary mb-2">Join Now 👍🏾</button>
                 </form>
               </div>
               <div class="modal-footer">
                 <button
-                  type="button"
-                  class="btn btn-secondary"
+                  class="btn back-btn btn-secondary"
                   data-dismiss="modal"
                 >
                   Back
-                </button>
-                <button type="button" class="btn btn-primary">
-                  Join Us
                 </button>
               </div>
             </div>
@@ -381,6 +370,8 @@
     <br />
   </div>
 </footer>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script
