@@ -74,13 +74,4 @@ $.ajax(settings).done(function(response) {
   }
 });
 
-// form submission
-// $(function() {
-//   $("#buttonClick").click(function() {
-//     alert("Successfully submitted!");
-//     setTimeout(function() {
-//       alert("setTimeout");
-//       document.getElementById("#name").value = "";
-//     }, 2000);
-//   });
-// });
+

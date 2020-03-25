@@ -47,9 +47,11 @@
     position: relative;
     margin: 0 auto !important;
   }
+
   .pay-slide {
     display: none;
   }
+
   /* scan to pay */
   .scan-to-pay h1 {
     line-height: 80px !important;
@@ -58,7 +60,7 @@
   }
 
   .coin-vid {
-    width: 22%;
+    display: none;
   }
 
   .join-btn {
@@ -82,9 +84,11 @@
   .overview-image {
     padding-right: 12% !important;
   }
+
   .pc-view {
     display: none;
   }
+
   .mobile-sm-styles {
     display: block;
     font-size: 25px !important;
@@ -101,6 +105,7 @@
     font-size: 32px !important;
     height: auto !important;
   }
+
   #waitlist h4 {
     text-align: center;
     font-weight: normal;
