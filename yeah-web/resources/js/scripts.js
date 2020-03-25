@@ -65,13 +65,22 @@ var settings = {
 };
 
 $.ajax(settings).done(function(response) {
-  if (response == 201) {
-    alert("Done");
-    console.log(response);
-    document.getElementById("#name").value = "";
-    document.getElementById("#email").value = "";
-    document.getElementById("#phone_number").value = "";
-    document.window.location.href = "index.html";
+  if (response == 200) {
+
+    Swal.fire({
+      icon: 'success',
+      title: 'Done...',
+      text: 'You are in!',
+    })
+
+  }
+  else{
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Something went wrong!',
+      footer: '<a href>Why do I have this issue?</a>'
+    })
   }
 });
 
