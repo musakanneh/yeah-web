@@ -31,8 +31,8 @@ $(document).ready(function(){
                 if(responseData == 1){
                     Swal.fire({
                         icon: 'success',
-                        title: 'Done',
-                        text: 'Thank you signing up',
+                        title: 'Completed',
+                        text: 'Thanks for expressing interest in Yeah, we are excited to create a product for you',
                         footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                     });
                 }
@@ -41,7 +41,7 @@ $(document).ready(function(){
                     Swal.fire({
                         icon: 'error',
                         title: 'Error',
-                        text: "The error it's on our side :)",
+                        text: "Sorry, an error occurred. Kindly refresh your browser and resubmit the form:)",
                         footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                     });
                 }
@@ -51,7 +51,7 @@ $(document).ready(function(){
                     Swal.fire({
                         icon: 'error',
                         title: 'Error',
-                        text: "That email is already used :)",
+                        text: "A user with that email already exists :)",
                         footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                     });
                 }
@@ -61,7 +61,7 @@ $(document).ready(function(){
                     Swal.fire({
                         icon: 'error',
                         title: 'Error',
-                        text: "That phone number already used :)",
+                        text: "A user with that phone number already exists :)",
                         footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                     });
                 }
@@ -71,7 +71,7 @@ $(document).ready(function(){
                     Swal.fire({
                         icon: 'Error',
                         title: 'Incomplete',
-                        text: 'Missing fields',
+                        text: "Complete the missing fields",
                         footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                     });
                 }
@@ -80,7 +80,7 @@ $(document).ready(function(){
                 Swal.fire({
                     icon: 'error',
                     title: 'Error',
-                    text: 'An error occured',
+                    text: 'Sorry, an error occurred. Kindly refresh your browser and resubmit the form:)',
                     footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                 });
             }
