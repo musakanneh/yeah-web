@@ -18,8 +18,8 @@ $(document).ready(function(){
         //     });
 
         $.ajax({
-            type: "post",
-            url: "https://wwww.theyeah.io/waitinglist",
+            type: "GET",
+            url: "https://www.theyeah.io/waitinglist",
             data: {
                 name: name,
                 phone_number: phone_number,
@@ -27,18 +27,60 @@ $(document).ready(function(){
             },
             contentType: "application/x-www-form-urlencoded",
             success: function(responseData, textStatus, jqXHR) {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Done',
-                    text: 'Thank you signing up',
-                    footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
-                });
+
+                if(responseData == 1){
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Done',
+                        text: 'Thank you signing up',
+                        footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
+                    });
+                }
+                else if(responseData == 2){
+
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: "The error it's on our side :)",
+                        footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
+                    });
+                }
+
+                else if(responseData == 5){
+
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: "That email is already used :)",
+                        footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
+                    });
+                }
+
+                else if(responseData == 6){
+
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: "That phone number already used :)",
+                        footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
+                    });
+                }
+
+                else{
+
+                    Swal.fire({
+                        icon: 'Error',
+                        title: 'Incomplete',
+                        text: 'Missing fields',
+                        footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
+                    });
+                }
             },
             error: function(jqXHR, textStatus, errorThrown) {
                 Swal.fire({
-                    icon: 'success',
-                    title: 'Done',
-                    text: 'Thank you signing up',
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'An error occured',
                     footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                 });
             }
