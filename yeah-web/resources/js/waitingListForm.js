@@ -19,7 +19,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: "post",
-            url: "https://api.theyeah.io/api/v1/waiting_list_post",
+            url: "https://wwww.theyeah.io/waitinglist",
             data: {
                 name: name,
                 phone_number: phone_number,
