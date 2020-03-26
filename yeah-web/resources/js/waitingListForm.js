@@ -32,7 +32,7 @@ $(document).ready(function(){
                     Swal.fire({
                         icon: 'success',
                         title: 'Completed',
-                        text: 'Thanks for expressing interest in Yeah, we are excited to create a product for you',
+                        text: 'Thanks for expressing interest in Yeah, we are excited to create a product for you.',
                         footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                     });
                 }
@@ -41,7 +41,7 @@ $(document).ready(function(){
                     Swal.fire({
                         icon: 'error',
                         title: 'Error',
-                        text: "Sorry, an error occurred. Kindly refresh your browser and resubmit the form:)",
+                        text: "Sorry, an error occurred. Kindly refresh your browser and resubmit the form.",
                         footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                     });
                 }
@@ -51,7 +51,7 @@ $(document).ready(function(){
                     Swal.fire({
                         icon: 'error',
                         title: 'Error',
-                        text: "A user with that email already exists :)",
+                        text: "A user with that email already exists.",
                         footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                     });
                 }
@@ -61,7 +61,7 @@ $(document).ready(function(){
                     Swal.fire({
                         icon: 'error',
                         title: 'Error',
-                        text: "A user with that phone number already exists :)",
+                        text: "A user with that phone number already exists.",
                         footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                     });
                 }
@@ -80,7 +80,7 @@ $(document).ready(function(){
                 Swal.fire({
                     icon: 'error',
                     title: 'Error',
-                    text: 'Sorry, an error occurred. Kindly refresh your browser and resubmit the form:)',
+                    text: 'Sorry, an error occurred. Kindly refresh your browser and resubmit the form.',
                     footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                 });
             }
