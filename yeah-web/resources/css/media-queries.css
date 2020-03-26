@@ -206,3 +206,18 @@
     font-size: 12px !important;
   }
 }
+
+@media only screen and (max-width: 2560px) {
+  /* * {
+    border: 1px solid red;
+  } */
+/* 
+  .tm-payment span{
+
+  }
+  .tm-payment h1{
+    border: 1px solid red;
+    font-size: 200px !important;
+    line-height: 200px !important;
+  } */
+}
