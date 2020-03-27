@@ -30,9 +30,12 @@ $(document).ready(function(){
 
                 if(responseData == 1){
                     Swal.fire({
-                        icon: 'success',
                         title: 'Completed',
                         text: 'Thanks for expressing interest in Yeah, we are excited to create a product for you.',
+                        imageUrl: 'img/success.png',
+                        imageWidth: 400,
+                        imageHeight: 200,
+                        imageAlt: 'completed',
                         footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                     });
                 }
