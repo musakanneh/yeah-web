@@ -41,3 +41,7 @@ $(document).ready(function() {
   );
   waypoint;
 });
+
+
+// carousel
+

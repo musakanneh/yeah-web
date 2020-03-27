@@ -11,6 +11,10 @@
   width: 100%;
 }
 
+.mobile-video{
+  display: none;
+}
+
 /* ===========================
  * Animation styling
  * ===========================*/
@@ -173,7 +177,7 @@ header {
   margin-left: 2%;
   font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 100px !important;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .tm-payment-mob {
@@ -201,7 +205,7 @@ header {
   margin-left: auto !important;
   color: #e5e5e5;
   font-size: 100px !important;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "IBM Plex Sans", sans-serif !important;
   padding-top: 10%;
   line-height: 120px !important;
