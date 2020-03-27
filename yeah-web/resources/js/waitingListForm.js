@@ -19,7 +19,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: "GET",
-            url: "https://www.theyeah.io/waitinglist",
+            url: "waitinglist",
             data: {
                 name: name,
                 phone_number: phone_number,
@@ -32,9 +32,9 @@ $(document).ready(function(){
                     Swal.fire({
                         title: 'Completed',
                         text: 'Thanks for expressing interest in Yeah, we are excited to create a product for you.',
-                        imageUrl: 'img/success.png',
-                        imageWidth: 400,
-                        imageHeight: 200,
+                        imageUrl: 'resources/img/success.png',
+                        imageWidth: 100,
+                        imageHeight: 100,
                         imageAlt: 'completed',
                         footer: '<a href="mailto:yeah@theyeah.io?Subject=Question" target="_top">Have questions?</a>'
                     });
