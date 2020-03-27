@@ -1,6 +1,8 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 
 include_once "connection.php";
+
 
 
 if(!empty($_GET['name']) && !empty($_GET['phone_number']) && !empty($_GET['email'])){
