@@ -1,8 +1,18 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 
 include_once "connection.php";
 
+<<<<<<< HEAD
 if (!empty($_GET['name']) && !empty($_GET['phone_number']) && !empty($_GET['email'])) {
+=======
+
+
+if(!empty($_GET['name']) && !empty($_GET['phone_number']) && !empty($_GET['email'])){
+
+
+
+>>>>>>> 654f9d1a2cbcb515e8a8b8a842d0ec706c5dde78
 
     //email exists
     if (record_exists('waitinglist', 'email', $_GET['email'], $conn)) {
