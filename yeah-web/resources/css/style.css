@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "IBM Plex Sans", sans-serif !important; */
   text-rendering: optimizeLegibility;
 }
 
@@ -55,6 +54,7 @@ nav a {
 /* ==========================
  * Video background 
  * ==========================*/
+
 .bg-video {
   left: 0;
   top: 0;
@@ -65,6 +65,11 @@ nav a {
   min-height: auto !important;
   max-height: 25% !important;
 }
+
+.mob-feat-section{
+  display: none;
+}
+
 video {
   margin-top: 10% !important;
 }
@@ -129,9 +134,11 @@ header {
   background-color: #e5e5e5;
   transition: 1s ease;
 }
+
 .mobile-sm-styles {
   display: none;
 }
+
 .join-btn-foot {
   border-radius: 0;
   position: absolute;
@@ -141,6 +148,7 @@ header {
   background-color: transparent;
   border: 2px solid #e5e5e5;
 }
+
 .join-btn-foot:hover {
   color: #0846e2;
   transition: 1s ease;
@@ -152,6 +160,7 @@ header {
 .overview-image {
   width: 100%;
 }
+
 .cover {
   max-width: 100%;
   margin: 0 auto;
@@ -164,7 +173,7 @@ header {
   margin-left: 2%;
   font-family: "IBM Plex Sans", sans-serif !important;
   font-size: 100px !important;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .tm-payment-mob {
@@ -192,7 +201,7 @@ header {
   margin-left: auto !important;
   color: #e5e5e5;
   font-size: 100px !important;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "IBM Plex Sans", sans-serif !important;
   padding-top: 10%;
   line-height: 120px !important;

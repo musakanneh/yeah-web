@@ -35,8 +35,8 @@
 
       <div class="row container-fluid">
         <div class="col-md-9 tm-payment">
-          <h1>Payments <br> Made 
-           <span class="typer" id="main" data-words="Easier‌,Quicker,Simpler" data-delay="100" data-deleteDelay="1000"></span>
+          <h1>Payments <br> made 
+           <span class="typer" id="main" data-words="easier‌,quicker,simpler" data-delay="100" data-deleteDelay="1000"></span>
           </h1>
           <div>
             <p>All you need is a phone number.</p>
@@ -47,6 +47,8 @@
           type="button" class="join-btn btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
           Join waitlist 👍🏾
         </button>
+
+        
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -132,7 +134,7 @@
           >
             <span>🔗</span>
             <div>
-            <h4>Integreted account</h4>
+            <h4>Integrated account</h4>
             <p>Fund your account with MTN Mobile Money and M-PESA.
             </p>
           </div>
@@ -194,7 +196,11 @@
               Scan the service provider or seller’s QR code and enter the amount to pay.
             </p>
             <br />
-            <img src="resources/img/cod.png" class="img-fluid bar-code-img" alt="Responsive image"/>
+           
+          <lottie-player
+              src="https://assets1.lottiefiles.com/datafiles/z5QmjZrC2reTczH/data.json"  background="white"  speed="1"  style="width: 100wv; height: 100%;"  loop controls autoplay >
+          </lottie-player>
+          <!-- <img src="resources/img/cod.png" class="img-fluid bar-code-img" alt="Responsive image"/> -->
           </div>
         </div>
         <div class="col-md-3">
@@ -212,7 +218,7 @@
 
 
 
-    <section class="cover container-fluid mobile-feat tm-height mb-5">
+    <section class="cover dextop-feat-section container-fluid mobile-feat tm-height mb-5">
       <img class="mt-3 lg-head mb-5" src="resources/img/yh.png" alt="" />
       <div id="carouselExampleIndicators" class="row carousel slide feature-cover"
         data-ride="carousel">
@@ -269,7 +275,69 @@
     </section>
 
 
-    <footer class="container-fluid" id="footer">
+
+
+<!-- mobile version -->
+    <section class=" mob-feat-section container-fluid mb-5">
+      <img class="mt-3 lg-head mb-5" src="resources/img/yh.png" alt="" />
+      <div id="carouselExampleIndicators" class="row carousel slide feature-cover"
+        data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <section class="">
+          <div class="col-sm-12 mob-features-img-slider">
+            <div class="carousel-inner">
+              <div class="carousel-item active col-sm-12">
+                <img src="resources/img/airtime.png"
+                  class="img-fluid iphonepng d-block"
+                  alt="Responsive image"/>
+              </div>
+              <div class="carousel-item col-sm-12">
+                <img src="resources/img/send.png"
+                  class="img-fluid iphonepng d-block"
+                  alt="Responsive image"/>
+              </div>
+              <div class="carousel-item col-sm-12">
+                <img src="resources/img/confirm.png"
+                  class="img-fluid iphonepng d-block"
+                  alt="Responsive image"/>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-12 pay-slide mt-5  wp-3">
+            <div class="row pay-slide">
+              <div class="col-md-12 mb-5">
+                <img src="resources/img/path1.png"
+                class="img-fluid w-55"
+                alt="Responsive image"/>
+              </div>
+              <div class="col-md-12 mb-5">
+                <img src="resources/img/path2.png"
+                class="img-fluid w-55"
+                alt="Responsive image"/>
+              </div>
+              <div class="col-md-12 mb-5">
+                <img src="resources/img/path3.png"
+                class="img-fluid w-55"
+                alt="Responsive image"/>
+              </div>
+            </div>
+          </div> -->
+        </section>
+      </div>
+    </section>
+
+
+
+
+    <footer class="container-fluid " id="footer">
       <div class="cover pt-5">
         <div class="row mobile-sm-styles">
           <div class="col">
@@ -282,9 +350,6 @@
           </div>  
           <div class="col">
             <a href="https://twitter.com/YeahGeneration"> <i class="fa fa-twitter text-white"></i></a>
-          </div>
-          <div class="col">
-            <a href="#"> <i class="fa fa-linkedin text-white"></i></a>
           </div>
         </div>
         <div class="row">
@@ -397,6 +462,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
     <script src="resources/js/scripts.js"></script>
     <script src="resources/js/waitingListForm.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="resources/js/wow.min.js"></script>
     <script>
       new WOW().init();

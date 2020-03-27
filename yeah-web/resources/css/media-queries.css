@@ -3,23 +3,54 @@
     width: 60% !important;
     margin-left: 40% !important;
   }
+
+  .tm-payment h1 {
+    font-size: 22px !important;
+    width: 100% !important;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  * {
+    margin: 0 !important;
+    padding: 0;
+  }
+
+  .mob-features-img-slider {
+    margin-left: 20% !important;
+  }
+
+  .mob-features-img-slider img {
+    width: auto !important;
+    border-radius: 35px !important;
+  }
+
+  .dextop-feat-section {
+    display: none;
+  }
+
+  .mob-feat-section {
+    display: block;
+  }
+
+  .tm-payment h1 {
+    text-align: center;
+    margin-left: 11% !important;
+    margin-bottom: 8% !important;
+  }
+
   #feaure-row-div {
     padding: 0 !important;
     margin: 0 !important;
   }
 
   .tm-about {
-    padding: 0 !important;
-    margin: 0 !important;
     width: 100% !important;
+    margin-top: -10% !important;
     height: auto !important;
     font-family: "IBM Plex Sans", sans-serif !important;
     margin-bottom: 12% !important;
-    line-height: 35px !important;
-    font-size: 18px !important;
+    line-height: 30px !important;
   }
 
   /* feature section */
@@ -34,12 +65,16 @@
   }
 
   .feat-elements h4 {
-    margin-left: 2%;
+    padding-left: 2%;
+    font-weight: 400;
   }
 
   .feat-elements p {
-    margin-left: 2%;
-    margin-top: -5% !important;
+    font-weight: 300;
+    padding-left: 2%;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    margin-bottom: 4% !important;
     height: auto !important;
   }
 
@@ -64,8 +99,19 @@
   }
 
   .join-btn {
+    background-color: #ffffff;
+    border: transparent;
+    color: blue;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
     text-align: center;
     margin: 2rem !important;
+  }
+
+  .join-btn:hover {
+    background-color: blue;
+    color: #ffffff;
   }
 
   .bg-video {
@@ -73,7 +119,7 @@
   }
 
   .tm-payment p {
-    margin-bottom: 20% !important;
+    margin-bottom: 15% !important;
     font-size: auto !important;
   }
 
@@ -102,24 +148,41 @@
   #future-of-payment {
     text-align: center;
     margin: 1rem !important;
+    font-weight: 400;
     font-size: 32px !important;
     height: auto !important;
   }
 
   #waitlist h4 {
     text-align: center;
+    margin: 0rem 1rem !important;
     font-weight: normal;
+    font-family: "IBM Plex Sans", sans-serif !important;
     margin-left: 4% !important;
   }
 }
 
 /* ipods */
 @media only screen and (max-width: 768px) {
+  * {
+    margin: 0 !important;
+  }
+
+  /* .join-btn {
+    margin-left: 10% !important;
+    border: 1px solid red;
+  } */
+
+  .join-btn:hover {
+    background-color: blue;
+    color: #ffffff;
+  }
+
   .navbar-toggler-icon {
     font-weight: normal;
     margin-top: 10% !important;
     color: white;
-    margin-left: -70% !important;
+    margin-left: -100% !important;
   }
 
   #logo {
@@ -133,29 +196,43 @@
 
   .tm-payment p {
     margin-bottom: -20% !important;
-    font-size: 20px !important;
-    width: 100% !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    text-align: center;
+    margin: 1rem !important;
   }
 
   .tm-payment h1 {
+    margin: 0 1rem !important;
     padding-top: 10% !important;
-    font-size: 40px !important;
-    line-height: 60px !important;
+    margin: 0 auto !important;
+    font-size: 35px !important;
+    line-height: 50px !important;
+    margin-bottom: 5% !important;
   }
 
   .tm-payment h1 span {
-    font-size: 40px !important;
+    line-height: auto !important;
+    font-size: 35px !important;
   }
 
   .join-btn {
     position: relative;
     font-size: 20px !important;
-    margin-left: 28% !important;
+    margin-left: 25% !important;
   }
+
   .join-btn-foot {
-    position: relative;
-    font-size: 20px !important;
     margin-left: 28% !important;
+    margin-bottom: 8% !important;
+    position: relative;
+    background-color: #ffffff;
+    border: transparent;
+    color: blue;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18px !important;
+    text-align: center;
   }
 
   .tm-about {
@@ -166,8 +243,10 @@
   }
 
   #feaure-row-div {
-    margin-top: -10% !important;
-    padding: 0% 1%;
+    /* border: 1px solid red; */
+    margin-top: -7% !important;
+    /* padding: 0% 1%; */
+    /* margin: 0  !important; */
   }
 
   h4 {
@@ -211,7 +290,7 @@
   /* * {
     border: 1px solid red;
   } */
-/* 
+  /* 
   .tm-payment span{
 
   }
