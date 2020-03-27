@@ -11,15 +11,26 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .tm-carousel {
+    display: block;
+  }
+
   .overview-image {
     display: none;
   }
+
   .mobile-video {
     display: block;
-    margin-top: -5% !important;
     width: 80% !important;
-    margin: 2rem !important;
+    margin-left: 10% !important;
+    margin-bottom: 2% !important;
   }
+
+  .re-scan {
+    border: 1px solid red;
+    margin-top: auto;
+  }
+
   .bar-code-img {
     display: none;
   }
@@ -102,6 +113,7 @@
   .pay-slide {
     display: none;
   }
+
   .mob-feat-section {
     margin: 0 !important;
     padding: 0 !important;
@@ -109,8 +121,9 @@
 
   /* scan to pay */
   #bar-code-sec {
-    background-color: #444444;
+    background-color: #000000;
   }
+
   .scan-to-pay h1 {
     line-height: 80px !important;
     font-family: "IBM Plex Sans", sans-serif !important;

@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 auto !important;
   padding: 0;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
@@ -11,7 +11,7 @@
   width: 100%;
 }
 
-.mobile-video{
+.mobile-video {
   display: none;
 }
 
@@ -70,7 +70,7 @@ nav a {
   max-height: 25% !important;
 }
 
-.mob-feat-section{
+.mob-feat-section {
   display: none;
 }
 
@@ -81,7 +81,6 @@ video {
 header {
   background-color: #0a1ed1;
   font-family: "IBM Plex Sans", sans-serif !important;
-  /* border: 1px solid red; */
   height: auto !important;
 }
 
@@ -142,6 +141,9 @@ header {
 .mobile-sm-styles {
   display: none;
 }
+.tm-carousel {
+  display: none;
+}
 
 .join-btn-foot {
   border-radius: 0;
@@ -164,11 +166,12 @@ header {
 .overview-image {
   width: 100%;
 }
-
+/* 
 .cover {
   max-width: 100%;
   margin: 0 auto;
-}
+  border: 1px solid red;
+} */
 
 /* ==================================
 * Payment section
