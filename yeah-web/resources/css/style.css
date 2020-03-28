@@ -48,16 +48,15 @@ nav {
   z-index: 1;
   padding: 1% 2% !important;
   width: 100%;
-  margin: 0 auto !important;
-  /* padding-b; */
-  border: 1px solid red;
+  position: relative;
+
+  /* margin: 0 auto !important; */
 }
 
 nav a {
+  position: relative;
   color: #e5e5e5;
-  border: 1px solid red;
   font-weight: 500;
-  /* margin-left: -20% !important; */
   float: right;
 }
 
@@ -65,7 +64,8 @@ nav a:hover {
   color: #d8d4d4f3;
   transition: 1s ease;
   font-weight: 500;
-  float: right;
+  /* padding-left: -20% !important; */
+  /* float: right; */
 }
 
 .back {
@@ -372,7 +372,8 @@ span {
  ----------------------------------------*/
 #footer {
   background-color: #0a1ed1;
-  height: 100%;
+  height: auto !important;
+  margin-top: 10% !important;
 }
 
 #trade-mark p {
