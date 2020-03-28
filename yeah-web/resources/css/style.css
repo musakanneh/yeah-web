@@ -5,6 +5,16 @@
   text-rendering: optimizeLegibility;
 }
 
+/* ===========================
+ * The header styling
+ * ===========================*/
+header {
+  background-color: #0a1ed1;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  height: auto !important;
+  padding-bottom: 5% !important;
+}
+
 .form-group input {
   padding: 2%;
   border: 1px solid #005fb257;
@@ -35,6 +45,10 @@
   opacity: 0;
 }
 
+video {
+  margin-top: 10% !important;
+}
+
 .wp-1 .animated {
   opacity: 1;
   animation-duration: 2s ease;
@@ -43,14 +57,11 @@
 /* ===========================
  * Navbar styling
  * ===========================*/
-
 nav {
   z-index: 1;
   padding: 1% 2% !important;
   width: 100%;
   position: relative;
-
-  /* margin: 0 auto !important; */
 }
 
 nav a {
@@ -64,8 +75,6 @@ nav a:hover {
   color: #d8d4d4f3;
   transition: 1s ease;
   font-weight: 500;
-  /* padding-left: -20% !important; */
-  /* float: right; */
 }
 
 .back {
@@ -100,17 +109,6 @@ nav a:hover {
 
 .mob-feat-section {
   display: none;
-}
-
-video {
-  margin-top: 10% !important;
-}
-
-header {
-  background-color: #0a1ed1;
-  font-family: "IBM Plex Sans", sans-serif !important;
-  height: auto !important;
-  padding-bottom: 5% !important;
 }
 
 .form-control {
@@ -317,9 +315,9 @@ span {
   font-weight: bold;
 }
 
-/* --------------------------------
-* Bar code Sec Styling
---------------------------------*/
+/* ===========================
+ * Bar code Sec Styling
+ * ===========================*/
 #bar-code-sec {
   height: 100 auto;
   background-color: #151515;
@@ -355,9 +353,9 @@ span {
   cursor: pointer;
 }
 
-/* ----------------------------------
-* Adverting Section Styling
-------------------------------------*/
+/* ===========================
+ * Adverting Section Styling
+ * ===========================*/
 #advert-sec {
   height: 100 auto;
 }
@@ -367,9 +365,9 @@ span {
   margin-left: 15%;
 }
 
-/* ---------------------------------------
-* Footer Styling
- ----------------------------------------*/
+/* ===========================
+ * Footer Styling
+ * ===========================*/
 #footer {
   background-color: #0a1ed1;
   height: auto !important;
@@ -399,9 +397,9 @@ hr {
   color: #e5e5e5;
 }
 
-/* ---------------------------------
+/* ===========================
  * Media queries styling 
- -----------------------------------*/
+ * ===========================*/
 #mobile-features-styles {
   display: none;
 }
