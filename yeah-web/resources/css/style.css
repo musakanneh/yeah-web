@@ -11,22 +11,22 @@
   width: 100%;
 }
 
+.form-group {
+  border-radius: 0;
+  margin-bottom: 5% !important;
+}
+
 .mobile-video {
   display: none;
 }
 
-.code-scan{
+.code-scan {
   display: none;
 }
 
-.img-scan{
+.img-scan {
   margin: 10% 26% !important;
 }
-/* {
-  display: block;
-  margin-left: 20% !important;
-} */
-
 
 /* ===========================
  * Animation styling
@@ -43,20 +43,29 @@
 /* ===========================
  * Navbar styling
  * ===========================*/
+
 nav {
   z-index: 1;
   padding: 1% 2% !important;
   width: 100%;
+  margin: 0 auto !important;
+  /* padding-b; */
+  border: 1px solid red;
 }
 
 nav a {
   color: #e5e5e5;
+  border: 1px solid red;
   font-weight: 500;
+  /* margin-left: -20% !important; */
+  float: right;
 }
 
-.sticky nav a {
-  color: #e5e5e5;
-  font-weight: 0;
+nav a:hover {
+  color: #d8d4d4f3;
+  transition: 1s ease;
+  font-weight: 500;
+  float: right;
 }
 
 .back {
@@ -66,6 +75,15 @@ nav a {
 .pay-slide {
   cursor: pointer;
   padding-left: 3%;
+}
+
+.pay-slide h1 {
+  font-family: "IBM Plex Sans" !important;
+  font-weight: 500;
+  color: #0846e2;
+}
+.faded-color h1 {
+  color: #0846e262;
 }
 
 /* ==========================
@@ -105,7 +123,7 @@ header {
 * Buttons for the Wishlist form 
 =====================================*/
 .send-message-btn {
-  font-family: "IBM Plex Sans", sans-serif !important;
+  font-family: "IBM Plex Sans" !important;
   background-color: #0846e2;
   border-radius: 0 !important;
 }
@@ -215,7 +233,7 @@ header {
   color: #e5e5e5;
   font-size: 100px !important;
   font-weight: 300;
-  font-family: "IBM Plex Sans", sans-serif !important;
+  font-family: "IBM Plex Sans" !important;
   padding-top: 10%;
   line-height: 120px !important;
   letter-spacing: 1px;
@@ -272,16 +290,21 @@ header {
 }
 .features-row h4 {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 500;
+  font-family: "IBM Plex Sans" !important;
   margin-top: 10px;
   margin-bottom: 16px !important;
   color: #0a1ed1;
 }
 
+.iphonepng {
+  border-radius: 40px;
+}
+
 .feat-elements p {
   width: 100%;
   font-family: "IBM Plex Sans" !important;
-  height: 105px;
+  height: 100px;
   color: #000000;
   font-family: "IBM Plex Sans";
   font-size: 18px;
@@ -302,12 +325,6 @@ span {
   background-color: #151515;
 }
 
-.scan-to-pay img {
-  width: 40%;
-  margin-left: 30%;
-  margin-bottom: 5% !important;
-}
-
 .scan-to-pay h1 {
   width: 100%;
   text-align: center;
@@ -323,12 +340,11 @@ span {
 .scan-to-pay p {
   width: 100%;
   margin-top: 5% !important;
-  height: 30px;
   font-family: "IBM Plex Sans" !important;
   color: #e5e5e5;
   font-size: 18px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .loading {
@@ -368,8 +384,10 @@ span {
 
 #waitlist h4 {
   color: #e5e5e5;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  margin-top: -5% !important;
+  font-family: "IBM Plex Sans" !important;
+  font-weight: 400;
   letter-spacing: 0.31px;
 }
 
@@ -399,10 +417,12 @@ hr {
 
 #future-of-payment {
   height: auto !important;
+  position: relative;
   height: 261px;
+  margin-top: -6% !important;
   color: #e5e5e5;
   font-family: "IBM Plex Sans" !important;
-  font-size: 70px;
+  font-size: 65px;
   font-weight: 300;
   letter-spacing: 1px;
 }

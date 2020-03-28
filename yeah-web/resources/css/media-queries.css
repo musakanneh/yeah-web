@@ -16,7 +16,7 @@ html {
 }
 
 @media only screen and (max-width: 480px) {
-  .img-scan{
+  .img-scan {
     display: none;
   }
   #logo {
@@ -25,12 +25,15 @@ html {
   .navbar-toggler-icon {
     margin-right: 20% !important;
   }
-
-  .text {
-    float: right;
-    margin-right: 170% !important;
+  .fade-color h1 {
+    color: #0846e2;
+    width: 100%;
+    font-size: 28px;
+    position: relative;
   }
+
   .code-scan {
+    display: block;
     width: 100% !important;
     margin-bottom: 12% !important;
     height: 150% !important;
@@ -45,6 +48,8 @@ html {
 
   .mobile-video {
     display: block;
+    position: relative;
+    margin-bottom: 4% !important;
     width: 80% !important;
     margin-left: 10% !important;
   }
@@ -58,7 +63,8 @@ html {
   }
 
   .tm-carousel {
-    padding: 6rem !important;
+    position: relative;
+    margin: 15% 20% !important;
   }
 
   .mob-features-img-slider {
@@ -93,6 +99,7 @@ html {
     width: 100% !important;
     margin-top: -10% !important;
     height: auto !important;
+    position: relative;
     font-family: "IBM Plex Sans" !important;
     margin-bottom: 12% !important;
     line-height: 30px !important;
@@ -276,7 +283,7 @@ html {
   }
 
   .join-btn-foot {
-    margin-left: 28% !important;
+    margin-left: 25% !important;
     margin-bottom: 8% !important;
     font-family: "IBM Plex Sans" !important;
     position: relative;
