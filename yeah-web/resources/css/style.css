@@ -64,10 +64,8 @@ nav a {
   top: 0;
   margin-top: 0% !important;
   position: relative;
-  min-width: auto !important;
-  max-width: 25% !important;
-  min-height: auto !important;
-  max-height: 25% !important;
+  width: auto !important;
+  /* border: 1px solid red; */
 }
 
 .mob-feat-section {
@@ -82,6 +80,7 @@ header {
   background-color: #0a1ed1;
   font-family: "IBM Plex Sans", sans-serif !important;
   height: auto !important;
+  padding-bottom: 5% !important;
 }
 
 .form-control {
@@ -110,7 +109,8 @@ header {
 }
 
 .lg-head {
-  width: 8%;
+  width: 7%;
+  margin-left: 2.5% !important;
 }
 
 #main {
@@ -197,11 +197,11 @@ header {
 }
 
 .tm-payment p {
-  margin-left: 1%;
-  font-family: "IBM Plex Sans", sans-serif !important;
+  font-family: "IBM Plex Sans" !important;
   color: #e5e5e5;
-  font-size: 30px !important;
-  font-weight: 400;
+  margin-top: 4% !important;
+  font-size: 22px !important;
+  font-weight: 300;
 }
 
 .tm-payment h1 {
@@ -225,12 +225,12 @@ header {
 
 .tm-about {
   margin-top: 5% !important;
-  width: 80%;
-  font-family: "IBM Plex Sans", sans-serif !important;
+  width: 60%;
+  font-family: "IBM Plex Sans" !important;
   height: 430px;
-  color: #151515;
+  color: #303030;
   text-align: center;
-  font-size: 45px !important;
+  font-size: 40px !important;
   font-weight: 300;
   line-height: 60px;
 }
@@ -265,25 +265,29 @@ header {
   height: 100%;
 }
 .features-row h4 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   margin-top: 10px;
-  margin-bottom: 22px;
+  margin-bottom: 16px !important;
   color: #0a1ed1;
 }
+
 .feat-elements p {
   width: 100%;
+  font-family: "IBM Plex Sans" !important;
   height: 105px;
   color: #000000;
   font-family: "IBM Plex Sans";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
+
 span {
   font-size: 35px;
   cursor: pointer;
   font-weight: bold;
 }
+
 /* --------------------------------
 * Bar code Sec Styling
 --------------------------------*/
@@ -291,46 +295,56 @@ span {
   height: 100 auto;
   background-color: #151515;
 }
+
 .scan-to-pay img {
   width: 40%;
   margin-left: 30%;
   margin-bottom: 5% !important;
 }
+
 .scan-to-pay h1 {
   width: 100%;
   text-align: center;
-  height: 390px;
+  height: 100% auto !important;
   font-family: "IBM Plex Sans", sans-serif !important;
   color: #e5e5e5;
-  font-size: 150px;
+  font-size: 120px;
   font-weight: 700;
   letter-spacing: 1.77px;
-  line-height: 160px;
+  line-height: 120px;
 }
+
 .scan-to-pay p {
   width: 100%;
+  margin-top: 5% !important;
   height: 30px;
-  font-family: "IBM Plex Sans", sans-serif !important;
+  font-family: "IBM Plex Sans"!important;
   color: #e5e5e5;
   font-size: 18px;
+  text-align: center;
   font-weight: 500;
 }
+
 .loading {
   animation: loading 5s linear infinite;
 }
+
 .bar-code-img {
   cursor: pointer;
 }
+
 /* ----------------------------------
 * Adverting Section Styling
 ------------------------------------*/
 #advert-sec {
   height: 100 auto;
 }
+
 .feature-cover {
   width: 70%;
   margin-left: 15%;
 }
+
 /* ---------------------------------------
 * Footer Styling
  ----------------------------------------*/
@@ -338,6 +352,7 @@ span {
   background-color: #0a1ed1;
   height: 100%;
 }
+
 #trade-mark p {
   font-size: 14px;
   letter-spacing: 0.1px;
@@ -352,23 +367,21 @@ span {
   font-weight: 700;
   letter-spacing: 0.31px;
 }
+
 hr {
   margin-top: 40px;
   background-color: #e5e5e5;
   opacity: 0.503;
   color: #e5e5e5;
 }
-/* .header-img {
-  width: 60%;
-  margin-left: 40%;
-  cursor: pointer;
-} */
+
 /* ---------------------------------
  * Media queries styling 
  -----------------------------------*/
 #mobile-features-styles {
   display: none;
 }
+
 .payment-methods {
   width: 100%;
   height: 141px;
@@ -380,11 +393,13 @@ hr {
 }
 
 #future-of-payment {
-  margin-top: -6%;
+  /* margin-top: -10%; */
+  height: auto !important;
+  border: 1px solid red;
   height: 261px;
   color: #e5e5e5;
-  font-family: "IBM Plex Sans";
+  font-family: "IBM Plex Sans" !important;
   font-size: 70px;
-  font-weight: 350;
+  font-weight: 300;
   letter-spacing: 1px;
 }
