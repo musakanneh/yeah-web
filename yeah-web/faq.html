@@ -70,11 +70,90 @@
 
         }
 
+
+
+
+
+        * {box-sizing: border-box;}
+
+
+
+        .header {
+            overflow: hidden;
+            padding: 20px 10px;
+        }
+
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .header a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .header-right {
+            float: right;
+        }
+
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+        }
+
+
+        @font-face {
+            font-family: myFirstFont;
+            src: url(resources/fonts/IBMPlexSans-Light.otf);
+        }
+
+        @font-face {
+            font-family: myFirstFont;
+            src: url(resources/fonts/IBMPlexSans-Light.otf);
+            font-weight: bold;
+        }
+
+        * {
+            font-family: myFirstFont;
+        }
+
     </style>
 </head>
 
 
 <body>
+
+<div class="header">
+    <a class="navbar-brand" href="index.html"><img src="resources/img/faglogo.png" class="img-fluid" alt="Responsive image" id="logo"/></a>
+    <div class="header-right">
+        <a href="#contact">FAQs</a>
+        <a href="#about">Contact</a>
+    </div>
+</div>
 
 <div class="container">
     <div class="row">
@@ -167,125 +246,111 @@
     </div>
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12">
-            <footer class="container-fluid " id="footer">
-                <div class=" pt-5">
-                    <div class="row mobile-sm-styles">
-                        <div class="col">
-                            <a class="" href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour">
-                                <i class="fa fa-facebook fb-icon text-white"></i></a>
-                        </div>
-                        <div class="col">
-                            <a href="https://www.instagram.com/theyeahgen/?hl=en">
-                                <i class="fa fa-instagram text-white icon-color"></i></a>
-                        </div>
-                        <div class="col">
-                            <a href="https://twitter.com/YeahGeneration"> <i class="fa fa-twitter text-white"
-                            ></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <div class="row pc-view">
-                                <div class="col-md-12">
-                                    <a class="some-icons" href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour">
-                                        <i class="fa fa-facebook text-white"></i></a
-                                    ><br /><br />
-                                    <a class="some-icons" href="https://www.instagram.com/theyeahgen/?hl=en">
-                                        <i class="fa fa-instagram text-white"></i></a
-                                    ><br /><br />
-                                    <a class="some-icons" href="https://twitter.com/YeahGeneration">
-                                        <i class="fa fa-twitter text-white"></i></a
-                                    ><br /><br />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 feature-of-payment-mobile">
-                            <br />
-                            <h1 id="future-of-payment">
-                                Join the future <br />
-                                of payments.
-                            </h1>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="mb-4" id="waitlist">
-                                <br />
-                                <h4>
-                                    Add me to the early access waitlist
-                                </h4>
-                            </div>
-                            <button
-                                    type="button"
-                                    class="join-btn-foot btn "
-                                    data-toggle="modal"
-                                    data-target="#exampleModal"
-                                    data-whatever="@mdo"
-                            >
-                                Join waitlist 👍🏾
-                            </button>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">
-                                                Add me to the early access waitlist 👍🏾
-                                            </h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form >
-                                                <div class="form-group">
-                                                    <input type="text" name="name" id="name" placeholder="Full Name">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="email" id="email" name="email" placeholder="Email">
-                                                </div>
-                                                <div class="form-group">
-                                                    <input  id="phone_number" name="phone_number" placeholder="Phone Number">
-                                                </div>
-                                                <button id="buttonClick" data-dismiss="modal" class="btn btn-primary mb-2">Join Now 👍🏾</button>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button
-                                                    class="btn back-btn btn-secondary"
-                                                    data-dismiss="modal"
-                                            >
-                                                Back
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-                <div class="mt-4" id="trade-mark">
-                    <p>Copyright © 2020 Yeah App. All rights reserved.</p>
-                </div>
-                <br />
+<footer class="container-fluid " id="footer">
+    <div class=" pt-5">
+        <div class="row mobile-sm-styles">
+            <div class="col">
+                <a class="" href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour">
+                    <i class="fa fa-facebook fb-icon text-white"></i></a>
+            </div>
+            <div class="col">
+                <a href="https://www.instagram.com/theyeahgen/?hl=en">
+                    <i class="fa fa-instagram text-white icon-color"></i></a>
+            </div>
+            <div class="col">
+                <a href="https://twitter.com/YeahGeneration"> <i class="fa fa-twitter text-white"
+                ></i></a>
+            </div>
         </div>
-        </footer>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="row pc-view">
+                    <div class="col-md-12">
+                        <a class="some-icons" href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour">
+                            <i class="fa fa-facebook text-white"></i></a
+                        ><br /><br />
+                        <a class="some-icons" href="https://www.instagram.com/theyeahgen/?hl=en">
+                            <i class="fa fa-instagram text-white"></i></a
+                        ><br /><br />
+                        <a class="some-icons" href="https://twitter.com/YeahGeneration">
+                            <i class="fa fa-twitter text-white"></i></a
+                        ><br /><br />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 feature-of-payment-mobile">
+                <br />
+                <h1 id="future-of-payment">
+                    Join the future <br />
+                    of payments.
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-4" id="waitlist">
+                    <br />
+                    <h4>
+                        Add me to the early access waitlist
+                    </h4>
+                </div>
+                <button
+                        type="button"
+                        class="join-btn-foot btn "
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        data-whatever="@mdo"
+                >
+                    Join waitlist 👍🏾
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                    Add me to the early access waitlist 👍🏾
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form >
+                                    <div class="form-group">
+                                        <input type="text" name="name" id="name" placeholder="Full Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" id="email" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input  id="phone_number" name="phone_number" placeholder="Phone Number">
+                                    </div>
+                                    <button id="buttonClick" data-dismiss="modal" class="btn btn-primary mb-2">Join Now 👍🏾</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                        class="btn back-btn btn-secondary"
+                                        data-dismiss="modal"
+                                >
+                                    Back
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    <hr />
+    <div class="mt-4" id="trade-mark">
+        <p>Copyright © 2020 Yeah App. All rights reserved.</p>
+    </div>
+    <br />
+</footer>
 
 
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
-<script
-        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"
-></script>
 <script
         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -297,16 +362,8 @@
         crossorigin="anonymous"
 ></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="resources/js/jquery.waypoints.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
-<script src="resources/js/scripts.js"></script>
 <script src="resources/js/waitingListForm.js"></script>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<script src="resources/js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
+
 
 </body>
 </html>
