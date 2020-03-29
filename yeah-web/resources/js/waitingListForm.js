@@ -27,9 +27,9 @@ $(document).ready(function(){
                             "<p style='font-size: 30px;color: black'>Follow us</p><br>" +
                             "\t<div class=\"col-md-12\">\n" +
                             "                    <ul class=\"social-network social-circle\">\n" +
-                            "                        <li><a href=\"#\" class=\"icoFacebook\" title=\"Facebook\"><i class=\"fa fa-facebook\"></i></a></li>\n" +
-                            "                        <li><a href=\"#\" class=\"icoTwitter\" title=\"Twitter\"><i class=\"fa fa-twitter\"></i></a></li>\n" +
-                            "                        <li><a href=\"#\" class=\"icoTwitter\" title=\"Twitter\"><i class=\"fa fa-instagram\"></i></a></li>\n" +
+                            "                        <li><a target=\"_blank\" href=\"https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour\" class=\"icoFacebook\" title=\"Facebook\"><i class=\"fa fa-facebook\"></i></a></li>\n" +
+                            "                        <li><a target=\"_blank\" href=\"https://twitter.com/YeahGeneration\" class=\"icoTwitter\" title=\"Twitter\"><i class=\"fa fa-twitter\"></i></a></li>\n" +
+                            "                        <li><a target=\"_blank\" href=\"https://www.instagram.com/theyeahgen/?hl=en\" class=\"icoTwitter\" title=\"Twitter\"><i class=\"fa fa-instagram\"></i></a></li>\n" +
                             "                    </ul>\t\t\t\t\n" +
                             "\t\t\t\t</div>",
                         imageUrl: 'resources/img/success.png',
