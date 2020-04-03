@@ -6,14 +6,14 @@ include_once "connection.php";
 
 
 
-if(!empty($_GET['name']) && !empty($_GET['phone_number']) && !empty($_GET['email'])){
+if(!empty($_POST['name']) && !empty($_POST['phone_number']) && !empty($_POST['email'])){
 
 
 
 
     //email exists
 
-    if (record_exists ( 'waitinglist', 'email', $_GET['email'],$conn)){
+    if (record_exists ( 'waitinglist', 'email', $_POST['email'],$conn)){
 
 
         //email is free now check phone number
@@ -23,7 +23,7 @@ if(!empty($_GET['name']) && !empty($_GET['phone_number']) && !empty($_GET['email
         //email is free now check phone number
 
         //check phone number exists
-        if (record_exists ( 'waitinglist', 'phone_number', $_GET['phone_number'],$conn)){
+        if (record_exists ( 'waitinglist', 'phone_number', $_POST['phone_number'],$conn)){
 
 
             //it does not insert
@@ -70,9 +70,9 @@ else{
 
 
 function insertUser($conn){
-    $name = mysqli_real_escape_string($conn, $_GET['name']);
-    $email = mysqli_real_escape_string($conn, $_GET['email']);
-    $phone_number = mysqli_real_escape_string($conn, $_GET['phone_number']);
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $phone_number = mysqli_real_escape_string($conn, $_POST['phone_number']);
 
     if(mysqli_query($conn, "INSERT INTO waitinglist(name, email, phone_number) VALUES('" . $name . "', '" . $email . "', '" . $phone_number . "')")) {
         //echo one for success
