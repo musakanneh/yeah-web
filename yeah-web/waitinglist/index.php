@@ -1,6 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-header('Set-Cookie: cross-site-cookie=name; SameSite=None; Secure');
+
 
 include_once "connection.php";
 

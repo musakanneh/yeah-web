@@ -36,14 +36,26 @@ function alertDialogBox(folder_path) {
 
     $.ajax({
         type: "POST",
-        url: "https://www.theyeah.io/waitinglist",
-        cache : false,
+        url: "../waitinglist/index.php",
+        method: 'POST',
+        crossDomain: true,
+        crossOrigin: true,
+        async: true,
         data: {
             name: name,
             phone_number: phone_number,
             email: email,
         },
         contentType: "application/x-www-form-urlencoded",
+        headers: {
+            'Access-Control-Allow-Methods': '*',
+            "Access-Control-Allow-Credentials": true,
+            "Access-Control-Allow-Headers" : "Access-Control-Allow-Headers, Origin, X-Requested-With, Content-Type, Accept, Authorization",
+            "Access-Control-Allow-Origin": "*",
+            "Control-Allow-Origin": "*",
+            "cache-control": "no-cache",
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
         success: function(responseData, textStatus, jqXHR) {
 
             if(responseData == 1){
