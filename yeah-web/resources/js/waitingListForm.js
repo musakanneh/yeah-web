@@ -40,6 +40,7 @@ function alertDialogBox(folder_path) {
         method: 'POST',
         crossDomain: true,
         crossOrigin: true,
+        cache: false,
         async: true,
         data: {
             name: name,
