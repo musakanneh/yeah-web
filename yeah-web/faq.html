@@ -1,370 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Yeah | FAQ's</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="web-resources/normalize.css" />
     <link rel="stylesheet" href="web-resources/fluid-grid.css" />
-    <link rel="stylesheet" type="text/css" href="web-resources/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,300,400,400i,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="web-resources/animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,300,400,400i,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="resources/css/style.css" />
     <link rel="stylesheet" href="resources/css/media-queries.css" />
     <link rel="stylesheet" href="resources/css/social-media-icons.css" />
 
-    <link rel="shrotcut icon" type="image/png" href="resources/img/favicon.jpeg">
+    <link
+      rel="shrotcut icon"
+      type="image/png"
+      href="resources/img/favicon.jpeg"
+    />
 
     <script>
-        $(document).ready(function() {
-
-            $('.faq_question').click(function() {
-
-                if ($(this).parent().is('.open')){
-                    $(this).closest('.faq').find('.faq_answer_container').animate({'height':'0'},500);
-                    $(this).closest('.faq').removeClass('open');
-
-                }else{
-                    var newHeight =$(this).closest('.faq').find('.faq_answer').height() +'px';
-                    $(this).closest('.faq').find('.faq_answer_container').animate({'height':newHeight},500);
-                    $(this).closest('.faq').addClass('open');
-                }
-
-            });
-
+      $(document).ready(function () {
+        $(".faq_question").click(function () {
+          if ($(this).parent().is(".open")) {
+            $(this)
+              .closest(".faq")
+              .find(".faq_answer_container")
+              .animate({ height: "0" }, 500);
+            $(this).closest(".faq").removeClass("open");
+          } else {
+            var newHeight =
+              $(this).closest(".faq").find(".faq_answer").height() + "px";
+            $(this)
+              .closest(".faq")
+              .find(".faq_answer_container")
+              .animate({ height: newHeight }, 500);
+            $(this).closest(".faq").addClass("open");
+          }
         });
+      });
     </script>
     <style>
-        /*FAQS*/
-        .faq_question {
-            margin: 0px;
-            padding: 0px 0px 5px 0px;
-            display: inline-block;
-            cursor: pointer;
-            font-weight: bold;
-        }
+      /*FAQS*/
+      .faq_question {
+        margin: 0px;
+        padding: 0px 0px 5px 0px;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: bold;
+      }
 
-        .faq_answer_container {
-            height: 0px;
-            overflow: hidden;
-            padding: 0px;
-        }
+      .faq_answer_container {
+        height: 0px;
+        overflow: hidden;
+        padding: 0px;
+      }
 
-        .faq_answer_container {
-            width: 800px;
-            text-align: center;
-        }
+      .faq_answer_container {
+        width: 800px;
+        text-align: center;
+      }
 
-        .faq_answer_container p {
+      .faq_answer_container p {
+        word-wrap: break-word;
+      }
 
-            word-wrap: break-word;
+      * {
+        box-sizing: border-box;
+      }
 
-        }
+      .header {
+        overflow: hidden;
+        padding: 20px 10px;
+      }
 
+      .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+      }
 
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+      }
 
+      .header a:hover {
+        background-color: #ddd;
+        color: black;
+      }
 
+      .header a.active {
+        background-color: dodgerblue;
+        color: white;
+      }
 
-        * {box-sizing: border-box;}
+      .header-right {
+        float: right;
+      }
 
-
-
-        .header {
-            overflow: hidden;
-            padding: 20px 10px;
-        }
-
+      @media screen and (max-width: 500px) {
         .header a {
-            float: left;
-            color: black;
-            text-align: center;
-            padding: 12px;
-            text-decoration: none;
-            font-size: 18px;
-            line-height: 25px;
-            border-radius: 4px;
-        }
-
-        .header a.logo {
-            font-size: 25px;
-            font-weight: bold;
-        }
-
-        .header a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .header a.active {
-            background-color: dodgerblue;
-            color: white;
+          float: none;
+          display: block;
+          text-align: left;
         }
 
         .header-right {
-            float: right;
+          float: none;
         }
+      }
 
-        @media screen and (max-width: 500px) {
-            .header a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
+      @font-face {
+        font-family: myFirstFont;
+        src: url(resources/fonts/IBMPlexSans-Light.otf);
+      }
 
-            .header-right {
-                float: none;
-            }
-        }
+      @font-face {
+        font-family: myFirstFont;
+        src: url(resources/fonts/IBMPlexSans-Light.otf);
+        font-weight: bold;
+      }
 
-
-        @font-face {
-            font-family: myFirstFont;
-            src: url(resources/fonts/IBMPlexSans-Light.otf);
-        }
-
-        @font-face {
-            font-family: myFirstFont;
-            src: url(resources/fonts/IBMPlexSans-Light.otf);
-            font-weight: bold;
-        }
-
-        * {
-            font-family: myFirstFont;
-        }
-
+      * {
+        font-family: myFirstFont;
+      }
     </style>
-</head>
+  </head>
 
-
-<body>
-
-<div class="header">
-    <a class="navbar-brand" href="index.html"><img src="resources/img/faglogo.png" class="img-fluid" alt="Responsive image" id="logo"/></a>
-    <div class="header-right">
+  <body>
+    <div class="header">
+      <a class="navbar-brand" href="index.html"
+        ><img
+          src="resources/img/faglogo.png"
+          class="img-fluid"
+          alt="Responsive image"
+          id="logo"
+      /></a>
+      <div class="header-right">
         <a href="#contact">FAQs</a>
         <a href="#about">Contact</a>
+      </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
+    <div class="container">
+      <div class="row">
         <div class="col-md-12">
-            <p class="text-center" style="font-size: 90px">Questions</p>
-            <p class="text-center" style="font-size: 90px">about Yeah</p>
+          <p class="text-center" style="font-size: 90px;">Questions</p>
+          <p class="text-center" style="font-size: 90px;">about Yeah</p>
 
+          <!--start container-->
+          <div class="faq_container text-center">
+            <div class="faq">
+              <div class="faq_question font-weight-bold">
+                <p style="font-size: 36px; color: #0a1ed1;">
+                  Is my money safe with Yeah?
+                </p>
+              </div>
 
-
-
-                    <!--start container-->
-            <div class="faq_container text-center">
-                <div class="faq">
-                    <div class="faq_question font-weight-bold"><p style="font-size: 36px;color: #0a1ed1;">Is my money safe with Yeah?</p></div>
-
-                    <div class="faq_answer_container">
-                        <div class="faq_answer"><p style="font-size: 30px">Yes, your money is safe with us. We make use of very secure encryptions to protect all accounts with the same high-security the worlds best banks use.</p></div>
-                    </div>
-
+              <div class="faq_answer_container">
+                <div class="faq_answer">
+                  <p style="font-size: 30px;">
+                    Yes, your money is safe with us. We make use of very secure
+                    encryptions to protect all accounts with the same
+                    high-security the worlds best banks use.
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
 
-                   <!--end container-->
+          <!--end container-->
 
+          <!--start container-->
+          <div class="faq_container text-center">
+            <div class="faq">
+              <div class="faq_question font-weight-bold">
+                <p style="font-size: 36px; color: #0846e2;">
+                  What makes Yeah different from other payment solutions?
+                </p>
+              </div>
 
-                    <!--start container-->
-            <div class="faq_container text-center">
-                <div class="faq">
-
-                <div class="faq_question font-weight-bold"><p style="font-size: 36px;color: #0846E2;">What makes Yeah different from other payment solutions?</p></div>
-
-                    <div class="faq_answer_container">
-                        <div class="faq_answer"><p style="font-size: 30px">At Yeah, we don’t forget our customers in our product design process. Asides that we are committed to making all your financial transactions quicker, more comfortable and seamless.</p></div>
-                    </div>
-
+              <div class="faq_answer_container">
+                <div class="faq_answer">
+                  <p style="font-size: 30px;">
+                    At Yeah, we don’t forget our customers in our product design
+                    process. Asides that we are committed to making all your
+                    financial transactions quicker, more comfortable and
+                    seamless.
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
 
-                    <!--end container-->
+          <!--end container-->
 
+          <!--start container-->
+          <div class="faq_container text-center">
+            <div class="faq">
+              <div class="faq_question font-weight-bold">
+                <p style="font-size: 36px; color: #0846e2;">
+                  What do I need to join Yeah?
+                </p>
+              </div>
 
-
-
-
-                                <!--start container-->
-            <div class="faq_container text-center">
-                <div class="faq">
-                                <div class="faq_question font-weight-bold"><p style="font-size: 36px;color: #0846E2;">What do I need to join Yeah?</p></div>
-
-                                <div class="faq_answer_container">
-                                    <div class="faq_answer"><p style="font-size: 30px">To sign up for a Yeah account, you must be 18 years old and above, with an email and phone number.</p></div>
-                                </div>
+              <div class="faq_answer_container">
+                <div class="faq_answer">
+                  <p style="font-size: 30px;">
+                    To sign up for a Yeah account, you must be 18 years old and
+                    above, with an email and phone number.
+                  </p>
                 </div>
+              </div>
             </div>
+          </div>
 
+          <!--end container-->
 
-                                <!--end container-->
+          <!--start container-->
+          <div class="faq_container text-center">
+            <div class="faq">
+              <div class="faq_question font-weight-bold">
+                <p style="font-size: 36px; color: #0846e2;">
+                  Will I be able to get account statements?
+                </p>
+              </div>
 
-                                <!--start container-->
-                    <div class="faq_container text-center">
-                        <div class="faq">
-                                <div class="faq_question font-weight-bold"><p style="font-size: 36px;color: #0846E2;">Will I be able to get account statements?</p></div>
+              <div class="faq_answer_container">
+                <div class="faq_answer">
+                  <p style="font-size: 30px;">
+                    Yes, we will send you a stamped account statement monthly
+                    and annually by email.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                                <div class="faq_answer_container">
-                                    <div class="faq_answer"><p style="font-size: 30px">Yes, we will send you a stamped account statement monthly and annually by email.</p></div>
-                                </div>
-                        </div>
-                    </div>
+          <!--end container-->
 
-                                <!--end container-->
+          <!--start container-->
+          <div class="faq_container text-center">
+            <div class="faq">
+              <div class="faq_question font-weight-bold">
+                <p style="font-size: 36px; color: #0846e2;">
+                  How can I reach out if I need help?
+                </p>
+              </div>
 
-                                <!--start container-->
-                            <div class="faq_container text-center">
-                                <div class="faq">
-                                <div class="faq_question font-weight-bold"><p style="font-size: 36px;color: #0846E2;">How can I reach out if I need help?</p></div>
+              <div class="faq_answer_container">
+                <div class="faq_answer">
+                  <p style="font-size: 30px;">
+                    Feel free to contact us by sending an email to
+                    support@theyeah.io
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-                                <div class="faq_answer_container">
-                                    <div class="faq_answer"><p style="font-size: 30px">Feel free to contact us by sending an email to support@theyeah.io</p></div>
-                                </div>
-                                </div>
-                            </div>
-
-                                <!--end container-->
-
-
-
-
-
+          <!--end container-->
         </div>
+      </div>
     </div>
-</div>
 
-<footer class="container-fluid " id="footer">
-    <div class=" pt-5">
+    <footer class="container-fluid" id="footer">
+      <div class="pt-5">
         <div class="row mobile-sm-styles">
-            <div class="col">
-                <a class="" href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour">
-                    <i class="fa fa-facebook fb-icon text-white"></i></a>
-            </div>
-            <div class="col">
-                <a href="https://www.instagram.com/theyeahgen/?hl=en">
-                    <i class="fa fa-instagram text-white icon-color"></i></a>
-            </div>
-            <div class="col">
-                <a href="https://twitter.com/YeahGeneration"> <i class="fa fa-twitter text-white"
-                ></i></a>
-            </div>
+          <div class="col">
+            <a
+              class=""
+              href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour"
+            >
+              <i class="fa fa-facebook fb-icon text-white"></i
+            ></a>
+          </div>
+          <div class="col">
+            <a href="https://www.instagram.com/theyeahgen/?hl=en">
+              <i class="fa fa-instagram text-white icon-color"></i
+            ></a>
+          </div>
+          <div class="col">
+            <a href="https://twitter.com/YeahGeneration">
+              <i class="fa fa-twitter text-white"></i
+            ></a>
+          </div>
         </div>
         <div class="row">
-            <div class="col-md-2">
-                <div class="row pc-view">
-                    <div class="col-md-12">
-                        <a class="some-icons" href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour">
-                            <i class="fa fa-facebook text-white"></i></a
-                        ><br /><br />
-                        <a class="some-icons" href="https://www.instagram.com/theyeahgen/?hl=en">
-                            <i class="fa fa-instagram text-white"></i></a
-                        ><br /><br />
-                        <a class="some-icons" href="https://twitter.com/YeahGeneration">
-                            <i class="fa fa-twitter text-white"></i></a
-                        ><br /><br />
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 feature-of-payment-mobile">
-                <br />
-                <h1 id="future-of-payment">
-                    Join the future <br />
-                    of payments.
-                </h1>
-            </div>
-            <div class="col-md-4">
-                <div class="mb-4" id="waitlist">
-                    <br />
-                    <h4>
-                        Add me to the early access waitlist
-                    </h4>
-                </div>
-                <button
-                        type="button"
-                        class="join-btn-foot btn "
-                        data-toggle="modal"
-                        data-target="#exampleModal"
-                        data-whatever="@mdo"
+          <div class="col-md-2">
+            <div class="row pc-view">
+              <div class="col-md-12">
+                <a
+                  class="some-icons"
+                  href="https://www.facebook.com/Yeah-Generation-111408140352882/?modal=admin_todo_tour"
                 >
-                    Join waitlist 👍🏾
-                </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">
-                                    Add me to the early access waitlist 👍🏾
-                                </h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form >
-                                    <div class="form-group">
-                                        <input type="text" name="name" id="name" placeholder="Full Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" id="email" name="email" placeholder="Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <input  id="phone_number" name="phone_number" placeholder="Phone Number">
-                                    </div>
-                                    <button id="buttonClick" data-dismiss="modal" class="btn btn-primary mb-2">Join Now 👍🏾</button>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button
-                                        class="btn back-btn btn-secondary"
-                                        data-dismiss="modal"
-                                >
-                                    Back
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  <i class="fa fa-facebook text-white"></i></a
+                ><br /><br />
+                <a
+                  class="some-icons"
+                  href="https://www.instagram.com/theyeahgen/?hl=en"
+                >
+                  <i class="fa fa-instagram text-white"></i></a
+                ><br /><br />
+                <a class="some-icons" href="https://twitter.com/YeahGeneration">
+                  <i class="fa fa-twitter text-white"></i></a
+                ><br /><br />
+              </div>
             </div>
+          </div>
+          <div class="col-md-6 feature-of-payment-mobile">
+            <br />
+            <h1 id="future-of-payment">
+              Join the future <br />
+              of payments.
+            </h1>
+          </div>
+          <div class="col-md-4">
+            <div class="mb-4" id="waitlist">
+              <br />
+              <h4>
+                Add me to the early access waitlist
+              </h4>
+            </div>
+            <button
+              type="button"
+              class="join-btn-foot btn"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              data-whatever="@mdo"
+            >
+              Join waitlist 👍🏾
+            </button>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Add me to the early access waitlist 👍🏾
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Full Name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          id="phone_number"
+                          name="phone_number"
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                      <button
+                        id="buttonClick"
+                        data-dismiss="modal"
+                        class="btn btn-primary mb-2"
+                      >
+                        Join Now 👍🏾
+                      </button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      class="btn back-btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Back
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    <hr />
-    <div class="mt-4" id="trade-mark">
+      </div>
+      <hr />
+      <div class="mt-4" id="trade-mark">
         <p>Copyright © 2020 Yeah App. All rights reserved.</p>
-    </div>
-    <br />
-</footer>
+      </div>
+      <br />
+    </footer>
 
-
-
-
-
-<script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"
-></script>
-<script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"
-></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-<script src="resources/js/waitingListForm.js"></script>
-
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="resources/js/waitingListForm.js"></script>
+  </body>
 </html>
-
