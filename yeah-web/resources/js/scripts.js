@@ -43,5 +43,6 @@ $(document).ready(function() {
 });
 
 
-// carousel
+// payment features sliders
+.pay-slide h1
 

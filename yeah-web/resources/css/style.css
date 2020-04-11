@@ -63,6 +63,9 @@ video {
 /* ===========================
  * Navbar styling
  * ===========================*/
+#navigation-bar {
+  padding-left: 82% !important;
+}
 nav {
   z-index: 1;
   padding: 1% 2% !important;
@@ -89,12 +92,14 @@ nav a:hover {
 
 .pay-slide {
   cursor: pointer;
+  border: 1px solid red;
   padding-left: 3%;
 }
 
 .pay-slide h1 {
   font-family: "IBM Plex Sans" !important;
   font-weight: 500;
+  border: 1px solid red;
   color: #0846e2;
 }
 .faded-color h1 {
@@ -299,10 +304,6 @@ nav a:hover {
   margin-top: 10px;
   margin-bottom: 16px !important;
   color: #0a1ed1;
-}
-
-.iphonepng {
-  border-radius: 40px;
 }
 
 .feat-elements p {
