@@ -78,6 +78,7 @@ nav a {
   color: #e5e5e5;
   font-weight: 500;
   float: right;
+  color: #4378fc6e;
 }
 
 nav a:hover {
@@ -92,18 +93,18 @@ nav a:hover {
 
 .pay-slide {
   cursor: pointer;
-  border: 1px solid red;
-  padding-left: 3%;
+  position: relative;
 }
 
-.pay-slide h1 {
-  font-family: "IBM Plex Sans" !important;
-  font-weight: 500;
-  border: 1px solid red;
-  color: #0846e2;
+.sample-cover {
+  padding-left: 12% !important;
 }
-.faded-color h1 {
-  color: #0846e262;
+.feature-text-wrapper {
+  padding: 15% 0%;
+}
+
+.cap h1 {
+  font-weight: 400 !important;
 }
 
 /* ==========================
