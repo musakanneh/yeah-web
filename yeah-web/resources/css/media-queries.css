@@ -16,6 +16,10 @@ html {
 }
 
 @media only screen and (max-width: 480px) {
+  .sample-cover {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
   .img-scan {
     display: none;
   }
@@ -50,8 +54,8 @@ html {
     display: block;
     position: relative;
     margin-bottom: 4% !important;
-    width: 80% !important;
-    margin-left: 10% !important;
+    width: 90% !important;
+    margin-left: 5% !important;
   }
 
   .re-scan {
@@ -136,8 +140,24 @@ html {
     margin: 0 auto !important;
   }
 
-  .pay-slide {
-    display: none;
+  .pay-slide h1 {
+    display: block;
+    /* border: 1px solid red; */
+    margin-left: 1% !important;
+    width: 100%;
+    font-size: 15px !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+  .cap {
+    padding: 0 !important;
+    width: 33%;
+    /* border: 1px solid red; */
+  }
+  .feature-text-wrapper {
+    margin-top: 5% !important;
+    display: flex;
+    padding: 0 !important;
   }
 
   .mob-feat-section {
@@ -329,9 +349,10 @@ html {
   }
 
   .pay-slide {
-    margin-top: 1% !important;
+    margin: 0 !important;
     font-family: "IBM Plex Sans" !important;
-    width: 95% !important;
+    padding: 0 !important;
+    width: 100% !important;
   }
 
   #future-of-payment {
